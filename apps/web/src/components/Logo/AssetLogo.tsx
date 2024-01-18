@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import useTokenLogoSource from 'hooks/useAssetLogoSource'
 import React, { useState } from 'react'
 import styled from 'styled-components'

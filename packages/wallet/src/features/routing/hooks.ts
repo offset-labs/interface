@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, TradeType } from '@offsetcarbon/sdk-core'
 import { useMemo } from 'react'
 import { useDebounceWithStatus } from 'utilities/src/time/timing'
 import { PollingInterval } from 'wallet/src/constants/misc'

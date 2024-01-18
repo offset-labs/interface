@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Scan, AnimatedScan] = createIcon({
   name: 'Scan',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" stroke="currentColor" viewBox="0 0 21 21" {...props}>
       <G stroke="currentColor" transform="translate(0.5,0.5)">
         <Path
@@ -17,5 +17,5 @@ export const [Scan, AnimatedScan] = createIcon({
         />
       </G>
     </Svg>
-  ),
+  )
 })

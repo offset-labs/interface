@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [RightArrow, AnimatedRightArrow] = createIcon({
   name: 'RightArrow',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 32 32" {...props}>
       <Path
         clipRule="evenodd"
@@ -14,5 +14,5 @@ export const [RightArrow, AnimatedRightArrow] = createIcon({
         fillRule="evenodd"
       />
     </Svg>
-  ),
+  )
 })

@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@uniswap/sdk-core'
+import { ChainId, Token } from '@offsetcarbon/sdk-core'
 import { TokenInfo } from '@uniswap/token-lists'
 import { nativeOnChain } from 'constants/tokens'
 import { PortfolioTokenBalancePartsFragment } from 'graphql/data/__generated__/types-and-hooks'

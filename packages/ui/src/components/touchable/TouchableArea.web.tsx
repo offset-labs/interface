@@ -9,6 +9,6 @@ export const TouchableArea = styled(YStack, {
   animation: 'quick',
 
   pressStyle: {
-    backgroundColor: '$backgroundPress',
-  },
+    backgroundColor: '$backgroundPress'
+  }
 })

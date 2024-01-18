@@ -1,4 +1,5 @@
-import { Price, Token } from '@uniswap/sdk-core'
+import { Price } from '@uniswap/sdk-core'
+import { Token } from '@offsetcarbon/sdk-core'
 import { tickToPrice } from '@uniswap/v3-sdk'
 
 export function getTickToPrice(baseToken?: Token, quoteToken?: Token, tick?: number): Price<Token, Token> | undefined {

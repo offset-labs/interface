@@ -1,4 +1,4 @@
-import { Currency, TradeType } from '@uniswap/sdk-core'
+import { Currency, TradeType } from '@offsetcarbon/sdk-core'
 import React, { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TouchableOpacity } from 'react-native-gesture-handler'

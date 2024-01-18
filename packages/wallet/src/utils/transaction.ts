@@ -21,8 +21,8 @@ export function hexlifyTransaction(
     ...(maxPriorityFeePerGas
       ? {
           maxPriorityFeePerGas: formatAsHexString(maxPriorityFeePerGas),
-          maxFeePerGas: formatAsHexString(maxFeePerGas),
+          maxFeePerGas: formatAsHexString(maxFeePerGas)
         }
-      : {}),
+      : {})
   }
 }

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { CurrencyInfo } from 'src/features/dataApi/types'
 import { BaseDerivedInfo } from 'src/features/transactions/transactionState/types'
 import { ChainId } from 'wallet/src/constants/chains'

@@ -33,10 +33,12 @@ function _Trace({
   section,
   element,
   modal,
-  properties,
+  properties
 }: PropsWithChildren<TraceProps>): JSX.Element {
-  const { useIsPartOfNavigationTree, shouldLogScreen: shouldLogScreen } =
-    useAnalyticsNavigationContext()
+  const {
+    useIsPartOfNavigationTree,
+    shouldLogScreen: shouldLogScreen
+  } = useAnalyticsNavigationContext()
   const isPartOfNavigationTree = useIsPartOfNavigationTree()
 
   const parentTrace = useTrace()
@@ -48,12 +50,12 @@ function _Trace({
       ...(screen ? { screen } : {}),
       ...(section ? { section } : {}),
       ...(modal ? { modal } : {}),
-      ...(element ? { element } : {}),
+      ...(element ? { element } : {})
     }
 
     return {
       ...parentTrace,
-      ...filteredProps,
+      ...filteredProps
     }
   }, [parentTrace, screen, section, modal, element])
 
@@ -72,7 +74,7 @@ function _Trace({
   const modifiedChildren = logPress ? (
     <TraceContext.Consumer>
       {(consumedProps): ReactNode =>
-        React.Children.map(children, (child) => {
+        React.Children.map(children, child => {
           if (!React.isValidElement(child)) {
             return child
           }
@@ -104,7 +106,8 @@ function _Trace({
       combinedProps={combinedProps}
       directFromPage={directFromPage}
       logImpression={logImpression}
-      properties={properties}>
+      properties={properties}
+    >
       <TraceContext.Provider value={combinedProps}>{modifiedChildren}</TraceContext.Provider>
     </NavAwareTrace>
   )
@@ -120,7 +123,7 @@ function NavAwareTrace({
   directFromPage,
   combinedProps,
   children,
-  properties,
+  properties
 }: { combinedProps: ITraceContext } & PropsWithChildren<NavAwareTraceProps>): JSX.Element {
   const { shouldLogScreen } = useAnalyticsNavigationContext()
   // Note: this does not register impressions when going back to a page from a modal

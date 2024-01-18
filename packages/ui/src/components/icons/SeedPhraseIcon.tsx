@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [SeedPhraseIcon, AnimatedSeedPhraseIcon] = createIcon({
   name: 'SeedPhraseIcon',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 18 17" {...props}>
       <Rect fill="white" height="3.1875" opacity="0.3" rx="1.0625" width="8.46875" y="0.53125" />
       <Rect
@@ -59,7 +59,8 @@ export const [SeedPhraseIcon, AnimatedSeedPhraseIcon] = createIcon({
           x1="1.41146"
           x2="3.41039"
           y1="5.02273"
-          y2="10.9584">
+          y2="10.9584"
+        >
           <Stop stopColor="#FF57EE" />
           <Stop offset="0.9375" stopColor="#FFB8A2" />
         </LinearGradient>
@@ -69,11 +70,12 @@ export const [SeedPhraseIcon, AnimatedSeedPhraseIcon] = createIcon({
           x1="10.9427"
           x2="12.9416"
           y1="13.5227"
-          y2="19.4584">
+          y2="19.4584"
+        >
           <Stop stopColor="#FF57EE" />
           <Stop offset="0.9375" stopColor="#FFB8A2" />
         </LinearGradient>
       </Defs>
     </Svg>
-  ),
+  )
 })

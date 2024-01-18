@@ -12,7 +12,7 @@ function PathMask({
   id,
   paths,
   scale,
-  shift = 0,
+  shift = 0
 }: {
   id: string
   paths: React.SVGProps<SVGPathElement>[]
@@ -23,7 +23,7 @@ function PathMask({
     <mask id={id}>
       <rect fill="white" height="100%" width="100%" x="0" y="0" />
       <g transform={`scale(${scale}) \n translate(${shift}, ${shift})`}>
-        {paths.map((pathProps) => (
+        {paths.map(pathProps => (
           <path key={pathProps.d as string} {...pathProps} fill="black" />
         ))}
       </g>
@@ -57,7 +57,7 @@ function UniconMask({ maskId, attributeData, size }: UniconMaskProps): JSX.Eleme
         <g fill="white">
           <g mask={`url(#${shapeMaskId})`}>
             <g transform={`scale(${size / ORIGINAL_CONTAINER_SIZE})`}>
-              {attributeData[UniconAttributes.Container].map((pathProps) => (
+              {attributeData[UniconAttributes.Container].map(pathProps => (
                 <path key={pathProps.d as string} {...pathProps} />
               ))}
             </g>
@@ -65,8 +65,9 @@ function UniconMask({ maskId, attributeData, size }: UniconMaskProps): JSX.Eleme
           <g mask={`url(#${containerMaskId})`}>
             <g
               transform={`scale(${size / ORIGINAL_CONTAINER_SIZE})
-        translate(10, 10)`}>
-              {attributeData[UniconAttributes.Shape].map((pathProps) => (
+        translate(10, 10)`}
+            >
+              {attributeData[UniconAttributes.Shape].map(pathProps => (
                 <path key={pathProps.d as string} {...pathProps} />
               ))}
             </g>
@@ -101,7 +102,7 @@ function UniconBlur({ blurId, size }: { blurId: string; size: number }): JSX.Ele
 function UniconSvg({
   attributeIndices,
   size,
-  address,
+  address
 }: {
   attributeIndices: UniconAttributesToIndices
   size: number
@@ -116,7 +117,7 @@ function UniconSvg({
   const maskId = `mask${address + size}`
   const blurId = `blur${address + size}`
   const svgProps = {
-    viewBox: `0 0 ${size} ${size}`,
+    viewBox: `0 0 ${size} ${size}`
   }
 
   if (!attributeIndices || !attributeData) return null
@@ -154,10 +155,10 @@ interface Props {
 }
 
 function _Unicon({ address, size = 24, randomSeed = 0, mobile }: Props): JSX.Element | null {
-  const attributeIndices = useMemo(
-    () => deriveUniconAttributeIndices(address, randomSeed),
-    [address, randomSeed]
-  )
+  const attributeIndices = useMemo(() => deriveUniconAttributeIndices(address, randomSeed), [
+    address,
+    randomSeed
+  ])
 
   if (!address || !isEthAddress(address) || !attributeIndices) return null
 
@@ -170,8 +171,9 @@ function _Unicon({ address, size = 24, randomSeed = 0, mobile }: Props): JSX.Ele
           height: size,
           width: size,
           overflow: 'visible',
-          position: 'absolute',
-        }}>
+          position: 'absolute'
+        }}
+      >
         <UniconSvg
           address={address}
           attributeIndices={attributeIndices}

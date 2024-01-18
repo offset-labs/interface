@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { useInfoTDPEnabled } from 'featureFlags/flags/infoTDP'

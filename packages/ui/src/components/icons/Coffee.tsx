@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Coffee, AnimatedCoffee] = createIcon({
   name: 'Coffee',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" stroke="currentColor" viewBox="0 0 20 19" {...props}>
       <Path
         d="M15 6.7h.8a3.3 3.3 0 0 1 0 6.6H15"
@@ -43,5 +43,5 @@ export const [Coffee, AnimatedCoffee] = createIcon({
         strokeWidth="2"
       />
     </Svg>
-  ),
+  )
 })

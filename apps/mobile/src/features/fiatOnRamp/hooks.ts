@@ -1,5 +1,5 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useAppDispatch } from 'src/app/hooks'

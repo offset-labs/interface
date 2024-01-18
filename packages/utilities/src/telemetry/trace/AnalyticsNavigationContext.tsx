@@ -7,7 +7,7 @@ interface AnalyticsNavigationContext {
 
 const defaultState: AnalyticsNavigationContext = {
   useIsPartOfNavigationTree: () => false,
-  shouldLogScreen: (_direct?: boolean, _screen?: string) => false,
+  shouldLogScreen: (_direct?: boolean, _screen?: string) => false
 }
 
 const context = createContext(defaultState)
@@ -17,7 +17,7 @@ export const useAnalyticsNavigationContext = (): AnalyticsNavigationContext => u
 export function AnalyticsNavigationContextProvider({
   useIsPartOfNavigationTree,
   shouldLogScreen,
-  children,
+  children
 }: PropsWithChildren<AnalyticsNavigationContext>): JSX.Element {
   return (
     <context.Provider value={{ useIsPartOfNavigationTree, shouldLogScreen }}>

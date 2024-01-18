@@ -7,7 +7,7 @@ export function getKeys<T extends object>(obj: T): (keyof T)[] {
 
 export function flattenObjectOfObjects<T>(obj: Record<string, Record<string, T>>): T[] {
   return Object.values(obj)
-    .map((o) => Object.values(o))
+    .map(o => Object.values(o))
     .flat()
 }
 

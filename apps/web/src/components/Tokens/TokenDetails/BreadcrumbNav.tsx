@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import Row from 'components/Row'
 import useCopyClipboard from 'hooks/useCopyClipboard'
 import { useScreenSize } from 'hooks/useScreenSize'

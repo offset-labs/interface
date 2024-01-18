@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 export const DEFAULT_DELAY = 200
 
 export function sleep(milliseconds: number): Promise<boolean> {
-  return new Promise((resolve) => setTimeout(() => resolve(true), milliseconds))
+  return new Promise(resolve => setTimeout(() => resolve(true), milliseconds))
 }
 
 export async function promiseTimeout<T>(
@@ -11,7 +11,7 @@ export async function promiseTimeout<T>(
   milliseconds: number
 ): Promise<T | null> {
   // Create a promise that rejects in <ms> milliseconds
-  const timeout = new Promise<null>((resolve) => {
+  const timeout = new Promise<null>(resolve => {
     const id = setTimeout(() => {
       clearTimeout(id)
       resolve(null)
@@ -31,7 +31,7 @@ export async function promiseMinDelay(
   promise: Promise<unknown>,
   milliseconds: number
 ): Promise<unknown> {
-  const minDelay = new Promise<null>((resolve) => {
+  const minDelay = new Promise<null>(resolve => {
     const id = setTimeout(() => {
       clearTimeout(id)
       resolve(null)

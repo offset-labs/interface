@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { DAI } from 'wallet/src/constants/tokens'
 import { getCurrencyAmount, ValueType } from 'wallet/src/utils/getCurrencyAmount'
 
@@ -52,7 +52,7 @@ describe(getCurrencyAmount, () => {
       getCurrencyAmount({
         value: '1000000000000000000',
         valueType: ValueType.Raw,
-        currency: DAI,
+        currency: DAI
       })
     ).toEqual(ONE_DAI)
   })
@@ -68,7 +68,7 @@ describe(getCurrencyAmount, () => {
       getCurrencyAmount({
         value: '500000000000000000',
         valueType: ValueType.Raw,
-        currency: DAI,
+        currency: DAI
       })
     ).toEqual(HALF_DAI)
   })
@@ -78,7 +78,7 @@ describe(getCurrencyAmount, () => {
       getCurrencyAmount({
         value: '0.00000000000000000000001',
         valueType: ValueType.Exact,
-        currency: DAI,
+        currency: DAI
       })
     ).toBeNull()
   })
@@ -88,7 +88,7 @@ describe(getCurrencyAmount, () => {
       getCurrencyAmount({
         value: '0.1',
         valueType: ValueType.Raw,
-        currency: DAI,
+        currency: DAI
       })
     ).toBeNull()
   })
@@ -98,7 +98,7 @@ describe(getCurrencyAmount, () => {
       getCurrencyAmount({
         value: '.',
         valueType: ValueType.Exact,
-        currency: DAI,
+        currency: DAI
       })
     ).toBeNull()
   })
@@ -108,7 +108,7 @@ describe(getCurrencyAmount, () => {
       getCurrencyAmount({
         value: '123as2s',
         valueType: ValueType.Exact,
-        currency: DAI,
+        currency: DAI
       })
     ).toBeNull()
   })
@@ -118,7 +118,7 @@ describe(getCurrencyAmount, () => {
       getCurrencyAmount({
         value: '0x38d7ea4c68000',
         valueType: ValueType.Raw,
-        currency: DAI,
+        currency: DAI
       })
     ).toEqual(FRACTION_OF_DAI)
   })

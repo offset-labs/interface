@@ -23,7 +23,7 @@ export const config = createTamagui({
     heading: headingFont,
     subHeading: subHeadingFont,
     body: bodyFont,
-    button: buttonFont,
+    button: buttonFont
   },
   themes,
   tokens,
@@ -36,13 +36,13 @@ export const config = createTamagui({
     xl: { maxWidth: breakpoints.xl },
     xxl: { maxWidth: breakpoints.xxl },
     xxxl: { maxWidth: breakpoints.xxxl },
-    short: { maxHeight: heightBreakpoints.short },
+    short: { maxHeight: heightBreakpoints.short }
   }),
   settings: {
     allowedStyleValues: 'somewhat-strict-web',
     autocompleteSpecificTokens: 'except-special',
-    fastSchemeChange: true,
-  },
+    fastSchemeChange: true
+  }
 })
 
 export default config

@@ -1,4 +1,4 @@
-import { ChainId, CurrencyAmount } from '@uniswap/sdk-core'
+import { ChainId, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { CyHttpMessages } from 'cypress/types/net-stubbing'
 
 import { DAI, nativeOnChain, USDC_MAINNET } from '../../../src/constants/tokens'

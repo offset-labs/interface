@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [QrCode, AnimatedQrCode] = createIcon({
   name: 'QrCode',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Path
         d="M9 2H3C2.44772 2 2 2.44772 2 3V9C2 9.55228 2.44772 10 3 10H9C9.55228 10 10 9.55228 10 9V3C10 2.44772 9.55228 2 9 2Z"
@@ -57,5 +57,5 @@ export const [QrCode, AnimatedQrCode] = createIcon({
         strokeWidth="2"
       />
     </Svg>
-  ),
+  )
 })

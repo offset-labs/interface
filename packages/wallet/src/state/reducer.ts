@@ -17,7 +17,7 @@ export const sharedReducers = {
   languageSettings: languageSettingsReducer,
   notifications: notificationReducer,
   transactions: transactionReducer,
-  wallet: walletReducer,
+  wallet: walletReducer
 } as const
 
 // used to type RootState

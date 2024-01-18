@@ -1,5 +1,5 @@
 import { ApolloError, QueryHookOptions } from '@apollo/client'
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@offsetcarbon/sdk-core'
 import { BigNumber } from 'ethers'
 import { useMemo } from 'react'
 import { logger } from 'utilities/src/logger/logger'

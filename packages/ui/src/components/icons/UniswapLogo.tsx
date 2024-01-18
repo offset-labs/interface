@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [UniswapLogo, AnimatedUniswapLogo] = createIcon({
   name: 'UniswapLogo',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 16 16" {...props}>
       <Path
         clipRule="evenodd"
@@ -14,5 +14,5 @@ export const [UniswapLogo, AnimatedUniswapLogo] = createIcon({
         fillRule="evenodd"
       />
     </Svg>
-  ),
+  )
 })

@@ -15,7 +15,7 @@ import {
   getCurrencyAddressForAnalytics,
   isNativeCurrencyAddress,
   NATIVE_ANALYTICS_ADDRESS_VALUE,
-  SwapRouterNativeAssets,
+  SwapRouterNativeAssets
 } from './currencyId'
 
 const ETH = NativeCurrency.onChain(ChainId.Mainnet)

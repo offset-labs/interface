@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Moonpay, AnimatedMoonpay] = createIcon({
   name: 'Moonpay',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 36 36" {...props}>
       <Rect fill="#7D00FF" height="36" rx="18" width="36" />
       <Path
@@ -14,5 +14,5 @@ export const [Moonpay, AnimatedMoonpay] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#7D00FF',
+  defaultFill: '#7D00FF'
 })

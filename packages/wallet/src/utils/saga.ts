@@ -32,7 +32,7 @@ export function createSaga<SagaParams = void>(
       } catch (error) {
         logger.error(error, {
           tags: { file: 'utils/saga', function: 'createSaga' },
-          extra: { sagaName: name },
+          extra: { sagaName: name }
         })
       }
     }
@@ -41,8 +41,8 @@ export function createSaga<SagaParams = void>(
   return {
     wrappedSaga,
     actions: {
-      trigger: triggerAction,
-    },
+      trigger: triggerAction
+    }
   }
 }
 
@@ -51,7 +51,7 @@ const DEFAULT_TIMEOUT = 90 * 1000 // 1.5 minutes
 export enum SagaStatus {
   Started = 'SagaStarted',
   Success = 'SagaSuccess',
-  Failure = 'SagaFailure',
+  Failure = 'SagaFailure'
 }
 
 export interface SagaState {
@@ -91,7 +91,7 @@ export function createMonitoredSaga<SagaParams = void>(
   const errorAction = createAction<string>(`${name}/error`)
   const resetAction = createAction<void>(`${name}/reset`)
 
-  const reducer = createReducer<SagaState>({ status: null, error: null }, (builder) =>
+  const reducer = createReducer<SagaState>({ status: null, error: null }, builder =>
     builder
       .addCase(statusAction, (state, action) => {
         state.status = action.payload
@@ -101,7 +101,7 @@ export function createMonitoredSaga<SagaParams = void>(
         state.status = SagaStatus.Failure
         state.error = action.payload
       })
-      .addCase(resetAction, (state) => {
+      .addCase(resetAction, state => {
         state.status = null
         state.error = null
       })
@@ -120,7 +120,7 @@ export function createMonitoredSaga<SagaParams = void>(
           // Note: Use fork here instead if parallelism is required for the saga
           result: call(saga, trigger.payload),
           cancel: take(cancelAction.type),
-          timeout: delay(options?.timeoutDuration || DEFAULT_TIMEOUT),
+          timeout: delay(options?.timeoutDuration || DEFAULT_TIMEOUT)
         })
 
         if (cancel) {
@@ -144,7 +144,7 @@ export function createMonitoredSaga<SagaParams = void>(
       } catch (error) {
         logger.error(error, {
           tags: { file: 'utils/saga', function: 'createMonitoredSaga' },
-          extra: { sagaName: name },
+          extra: { sagaName: name }
         })
 
         const errorMessage = errorToString(error)
@@ -153,7 +153,7 @@ export function createMonitoredSaga<SagaParams = void>(
           yield* put(
             pushNotification({
               type: AppNotificationType.Error,
-              errorMessage,
+              errorMessage
             })
           )
         }
@@ -170,7 +170,7 @@ export function createMonitoredSaga<SagaParams = void>(
       cancel: cancelAction,
       progress: statusAction,
       error: errorAction,
-      reset: resetAction,
-    },
+      reset: resetAction
+    }
   }
 }

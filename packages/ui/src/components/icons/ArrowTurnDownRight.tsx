@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [ArrowTurnDownRight, AnimatedArrowTurnDownRight] = createIcon({
   name: 'ArrowTurnDownRight',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="currentColor" viewBox="0 0 25 24" {...props}>
       <G opacity="0.5">
         <Path
@@ -15,5 +15,5 @@ export const [ArrowTurnDownRight, AnimatedArrowTurnDownRight] = createIcon({
       </G>
     </Svg>
   ),
-  defaultFill: '#CECECE',
+  defaultFill: '#CECECE'
 })

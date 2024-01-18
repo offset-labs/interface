@@ -17,22 +17,23 @@ export function getEventHandlers(
   element?: string,
   properties?: Record<string, unknown>
 ): Partial<Record<string, (e: NativeSyntheticEvent<NativeTouchEvent>) => void>> {
-  const eventHandlers: Partial<
-    Record<string, (e: NativeSyntheticEvent<NativeTouchEvent>) => void>
-  > = {}
+  const eventHandlers: Partial<Record<
+    string,
+    (e: NativeSyntheticEvent<NativeTouchEvent>) => void
+  >> = {}
   for (const event of EVENTS_HANDLED) {
     eventHandlers[event] = (eventHandlerArgs: unknown): void => {
       if (!child.props[event]) {
         logger.error(new Error('Found a null handler while logging an event'), {
           tags: {
             file: 'trace/utils.ts',
-            function: 'getEventHandlers',
+            function: 'getEventHandlers'
           },
           extra: {
             eventName,
             ...consumedProps,
-            ...properties,
-          },
+            ...properties
+          }
         })
       }
 
@@ -43,7 +44,7 @@ export function getEventHandlers(
       analytics.sendEvent(eventName, {
         element,
         ...consumedProps,
-        ...properties,
+        ...properties
       })
     }
   }

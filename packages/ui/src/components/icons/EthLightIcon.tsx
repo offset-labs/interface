@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [EthLightIcon, AnimatedEthLightIcon] = createIcon({
   name: 'EthLightIcon',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <_Circle cx="12" cy="12" fill={'currentColor' ?? '#EDF0F4'} r="12" />
       <Path
@@ -34,5 +34,5 @@ export const [EthLightIcon, AnimatedEthLightIcon] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#EDF0F4',
+  defaultFill: '#EDF0F4'
 })

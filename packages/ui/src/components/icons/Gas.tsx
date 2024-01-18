@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Gas, AnimatedGas] = createIcon({
   name: 'Gas',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 17 16" {...props}>
       <Path
         clipRule="evenodd"
@@ -15,5 +15,5 @@ export const [Gas, AnimatedGas] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#7D7D7D',
+  defaultFill: '#7D7D7D'
 })

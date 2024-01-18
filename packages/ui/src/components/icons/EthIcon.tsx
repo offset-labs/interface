@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [EthIcon, AnimatedEthIcon] = createIcon({
   name: 'EthIcon',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 25 24" {...props}>
       <Rect fill="url(#pattern0)" height="24" width="24.1711" />
       <Defs>
@@ -23,5 +23,5 @@ export const [EthIcon, AnimatedEthIcon] = createIcon({
         />
       </Defs>
     </Svg>
-  ),
+  )
 })

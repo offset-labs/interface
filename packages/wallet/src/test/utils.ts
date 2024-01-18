@@ -1,11 +1,11 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { PropsWithChildren, ReactNode } from 'react'
 // eslint-disable-next-line no-restricted-imports
 import {
   addFiatSymbolToNumber,
   formatCurrencyAmount,
   formatNumberOrString,
-  formatPercent,
+  formatPercent
 } from 'utilities/src/format/localeBased'
 import { NumberType } from 'utilities/src/format/types'
 import { FiatCurrency } from 'wallet/src/features/fiatCurrency/constants'
@@ -24,7 +24,7 @@ export const mockLocalizedFormatter: LocalizationContextState = {
       ...input,
       price: input.value,
       locale: 'en-US',
-      type: input.type || NumberType.TokenNonTx,
+      type: input.type || NumberType.TokenNonTx
     })
   },
   formatPercent(value) {
@@ -33,7 +33,7 @@ export const mockLocalizedFormatter: LocalizationContextState = {
   addFiatSymbolToNumber(input): string {
     return addFiatSymbolToNumber({
       ...input,
-      locale: 'en-US',
+      locale: 'en-US'
     })
   },
   convertFiatAmount(_?: number | undefined): { amount: number; currency: FiatCurrency } {
@@ -41,7 +41,7 @@ export const mockLocalizedFormatter: LocalizationContextState = {
   },
   convertFiatAmountFormatted(): string {
     throw new Error('Function not implemented.')
-  },
+  }
 }
 
 export const mockFiatConverter: LocalizationContextState = {
@@ -52,7 +52,7 @@ export const mockFiatConverter: LocalizationContextState = {
     return mockLocalizedFormatter.formatNumberOrString({
       value: fromAmount,
       type: numberType,
-      placeholder,
+      placeholder
     })
   },
   formatNumberOrString(_: {
@@ -79,7 +79,7 @@ export const mockFiatConverter: LocalizationContextState = {
     currencySymbol: string
   }): string {
     throw new Error('Function not implemented.')
-  },
+  }
 }
 
 export const MockLocalizationContext = {
@@ -90,6 +90,6 @@ export const MockLocalizationContext = {
     formatNumberOrString: mockLocalizedFormatter.formatNumberOrString,
     formatCurrencyAmount: mockLocalizedFormatter.formatCurrencyAmount,
     formatPercent: mockLocalizedFormatter.formatPercent,
-    addFiatSymbolToNumber: mockLocalizedFormatter.addFiatSymbolToNumber,
-  }),
+    addFiatSymbolToNumber: mockLocalizedFormatter.addFiatSymbolToNumber
+  })
 }

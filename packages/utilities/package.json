@@ -6,6 +6,8 @@
     "@amplitude/analytics-core": "0.11.0",
     "@amplitude/analytics-react-native": "1.4.0",
     "@amplitude/analytics-types": "0.13.0",
+    "@offsetcarbon/sdk-core": "4.0.13",
+    "@offsetcarbon/smart-order-router": "3.20.1",
     "@react-navigation/core": "6.2.2",
     "@sentry/react-native": "5.5.0",
     "@testing-library/react-hooks": "7.0.2",

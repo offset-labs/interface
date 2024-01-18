@@ -1,4 +1,4 @@
-import { Currency, TradeType } from '@uniswap/sdk-core'
+import { Currency, TradeType } from '@offsetcarbon/sdk-core'
 import { providers } from 'ethers'
 import { call, put } from 'typed-redux-saga'
 import { logger } from 'utilities/src/logger/logger'

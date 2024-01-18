@@ -159,7 +159,7 @@ const HASH_TO_FUNCTION_SIGNATURE: Record<string, string> = {
   df6adeaf: 'quoteExactInputSingleV2(tuple)',
   '38c0dfd3': 'quoteExactInputSingleV3(tuple)',
   be7672e5: 'batchValidate(address[],address[],uint256)',
-  '0143aace': 'validate(address,address[],uint256)',
+  '0143aace': 'validate(address,address[],uint256)'
 }
 
 export default function methodHashToFunctionSignature(hash: string): string | undefined {

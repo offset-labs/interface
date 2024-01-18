@@ -128,6 +128,8 @@ module.exports = {
         fallback: {
           // - react-markdown requires path
           path: require.resolve('path-browserify'),
+          http: require.resolve('stream-http'),
+          https: require.resolve('https-browserify')
         },
       })
 

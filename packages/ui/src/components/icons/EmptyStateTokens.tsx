@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [EmptyStateTokens, AnimatedEmptyStateTokens] = createIcon({
   name: 'EmptyStateTokens',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 66 65" {...props}>
       <Rect
         fill="currentColor"
@@ -52,5 +52,5 @@ export const [EmptyStateTokens, AnimatedEmptyStateTokens] = createIcon({
         y="45.851"
       />
     </Svg>
-  ),
+  )
 })

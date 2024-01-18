@@ -1,4 +1,4 @@
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@offsetcarbon/sdk-core'
 import { createFinalizedTxAction } from 'src/features/notifications/notificationWatcherSaga.test'
 import { formSwapNotificationTitle } from 'src/features/notifications/utils'
 import { ChainId } from 'wallet/src/constants/chains'

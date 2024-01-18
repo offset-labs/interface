@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import { MouseoverTooltip } from 'components/Tooltip'
 import { getChainInfo } from 'constants/chainInfo'
 import { useInfoTDPEnabled } from 'featureFlags/flags/infoTDP'

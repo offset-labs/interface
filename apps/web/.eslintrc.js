@@ -45,6 +45,11 @@ module.exports = {
                 message: 'Only import types, unless you are in the client-side SOR, to preserve lazy-loading.',
                 allowTypeImports: true,
               },
+              {
+                name: '@offsetcarbon/smart-order-router',
+                message: 'Only import types, unless you are in the client-side SOR, to preserve lazy-loading.',
+                allowTypeImports: true,
+              },
             ],
           },
         ],

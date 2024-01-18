@@ -1,5 +1,5 @@
-import { Token } from '@uniswap/sdk-core'
-import { ChainId } from '@uniswap/sdk-core'
+import { Token } from '@offsetcarbon/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import { PersistState } from 'redux-persist'
 import { serializeToken } from 'state/user/hooks'
 import { UserState } from 'state/user/reducer'

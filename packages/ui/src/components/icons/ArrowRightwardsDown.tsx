@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [ArrowRightwardsDown, AnimatedArrowRightwardsDown] = createIcon({
   name: 'ArrowRightwardsDown',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 15 16" {...props}>
       <Path
         d="M5.875 10.4375L9.9375 14.5L14 10.4375"
@@ -22,5 +22,5 @@ export const [ArrowRightwardsDown, AnimatedArrowRightwardsDown] = createIcon({
         strokeWidth="1.5"
       />
     </Svg>
-  ),
+  )
 })

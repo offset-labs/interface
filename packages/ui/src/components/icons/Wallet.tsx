@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Wallet, AnimatedWallet] = createIcon({
   name: 'Wallet',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Path
         clipRule="evenodd"
@@ -18,5 +18,5 @@ export const [Wallet, AnimatedWallet] = createIcon({
         fill="currentColor"
       />
     </Svg>
-  ),
+  )
 })

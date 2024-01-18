@@ -6,7 +6,7 @@ import {
   promiseTimeout,
   useDebounceWithStatus,
   useInterval,
-  useTimeout,
+  useTimeout
 } from './timing'
 
 jest.useFakeTimers()

@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [AaveIcon, AnimatedAaveIcon] = createIcon({
   name: 'AaveIcon',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <_Circle cx="12" cy="12" fill="url(#paint0_linear_12481_2214)" r="12" />
       <Path
@@ -19,11 +19,12 @@ export const [AaveIcon, AnimatedAaveIcon] = createIcon({
           x1="13.435"
           x2="-4.42097"
           y1="-4.45626"
-          y2="10.5677">
+          y2="10.5677"
+        >
           <Stop stopColor="#B6509E" />
           <Stop offset="1" stopColor="#2EBAC6" />
         </LinearGradient>
       </Defs>
     </Svg>
-  ),
+  )
 })

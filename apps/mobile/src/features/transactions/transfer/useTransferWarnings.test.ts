@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { WarningLabel } from 'src/components/modals/WarningModal/types'
 import { DerivedTransferInfo } from 'src/features/transactions/transfer/hooks'
 import { getTransferWarnings } from 'src/features/transactions/transfer/useTransferWarnings'

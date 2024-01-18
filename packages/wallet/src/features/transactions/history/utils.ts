@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@offsetcarbon/sdk-core'
 import dayjs from 'dayjs'
 import { getNativeAddress } from 'wallet/src/constants/addresses'
 import {

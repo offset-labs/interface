@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId, Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { PortfolioLogo } from 'components/AccountDrawer/MiniPortfolio/PortfolioLogo'
 import { getChainInfo } from 'constants/chainInfo'

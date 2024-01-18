@@ -1,6 +1,6 @@
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client'
 import { SwapEventName } from '@uniswap/analytics-events'
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@offsetcarbon/sdk-core'
 import { BigNumberish, providers } from 'ethers'
 import { call, delay, fork, put, race, take } from 'typed-redux-saga'
 import { logger } from 'utilities/src/logger/logger'

@@ -15,5 +15,7 @@ export function currentTimeInSeconds(): number {
 }
 
 export function inXMinutesUnix(x: number): number {
-  return dayjs().add(x, 'minute').unix()
+  return dayjs()
+    .add(x, 'minute')
+    .unix()
 }

@@ -1,4 +1,4 @@
-import { ChainId, WETH9 } from '@uniswap/sdk-core'
+import { ChainId, WETH9 } from '@offsetcarbon/sdk-core'
 import {
   MATIC_MAINNET,
   USDC_ARBITRUM,

@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/react'
-import { ChainId, Token } from '@uniswap/sdk-core'
+import { ChainId, Token } from '@offsetcarbon/sdk-core'
 import { render } from 'test-utils/render'
 
 import { ActivitySection } from './ActivitySection'

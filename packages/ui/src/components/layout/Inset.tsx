@@ -18,7 +18,7 @@ interface InsetProps {
  */
 export function Inset({
   all = '$spacing16',
-  children,
+  children
 }: PropsWithChildren<InsetProps>): JSX.Element {
   return <Flex p={all}>{children}</Flex>
 }

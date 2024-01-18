@@ -1,5 +1,5 @@
 import { QueryResult } from '@apollo/client'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { SafetyLevel } from 'wallet/src/data/__generated__/types-and-hooks'
 import { CurrencyId } from 'wallet/src/utils/currencyId'
 

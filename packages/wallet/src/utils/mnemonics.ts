@@ -7,7 +7,7 @@ export enum MnemonicValidationError {
   InvalidWord = 'InvalidWord',
   NotEnoughWords = 'NotEnoughWords',
   TooManyWords = 'TooManyWords',
-  InvalidPhrase = 'InvalidPhrase',
+  InvalidPhrase = 'InvalidPhrase'
 }
 
 export function translateMnemonicErrorMessage(
@@ -29,7 +29,9 @@ export function translateMnemonicErrorMessage(
 }
 
 // Validate if word is part of the BIP-39 word set [https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki]
-export function validateSetOfWords(mnemonic?: string): {
+export function validateSetOfWords(
+  mnemonic?: string
+): {
   error?: MnemonicValidationError
   invalidWord?: string
   isValidLength: boolean // we need this to enable/disable buttons for all error return types
@@ -40,12 +42,12 @@ export function validateSetOfWords(mnemonic?: string): {
   const split = formatted.split(' ')
   const isValidLength = split.length >= MNEMONIC_LENGTH_MIN && split.length <= MNEMONIC_LENGTH_MAX
 
-  const invalidWords = split.filter((item) => wordlists.en?.getWordIndex(item) === -1)
+  const invalidWords = split.filter(item => wordlists.en?.getWordIndex(item) === -1)
   if (invalidWords.length) {
     return {
       error: MnemonicValidationError.InvalidWord,
       invalidWord: invalidWords.at(-1),
-      isValidLength,
+      isValidLength
     }
   }
 
@@ -59,7 +61,9 @@ export function validateSetOfWords(mnemonic?: string): {
 }
 
 // Validate phrase by verifying the checksum
-export function validateMnemonic(mnemonic?: string): {
+export function validateMnemonic(
+  mnemonic?: string
+): {
   error?: MnemonicValidationError
   invalidWord?: string
   validMnemonic?: string

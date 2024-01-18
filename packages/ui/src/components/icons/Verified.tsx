@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Verified, AnimatedVerified] = createIcon({
   name: 'Verified',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 16 16" {...props}>
       <G clipPath="url(#clip0_1010_7085)">
         <Path
@@ -23,5 +23,5 @@ export const [Verified, AnimatedVerified] = createIcon({
         </ClipPath>
       </Defs>
     </Svg>
-  ),
+  )
 })

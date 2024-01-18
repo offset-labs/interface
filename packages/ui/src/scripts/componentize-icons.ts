@@ -23,12 +23,12 @@ async function run(): Promise<void> {
   const svgDirPairs: SVGDirectorySourceAndOutput[] = [
     {
       input: join(assetsDir, 'icons'),
-      output: join(srcDir, 'components', 'icons'),
+      output: join(srcDir, 'components', 'icons')
     },
     {
       input: join(assetsDir, 'logos', 'svg'),
-      output: join(srcDir, 'components', 'logos'),
-    },
+      output: join(srcDir, 'components', 'logos')
+    }
   ]
 
   for (const dirPair of svgDirPairs) {
@@ -41,7 +41,7 @@ async function generateSVGComponents(directoryPair: SVGDirectorySourceAndOutput)
 
   await ensureDir(directoryPair.output)
 
-  const fileNames = (await readdir(directoryPair.input)).filter((name) => name.endsWith('.svg'))
+  const fileNames = (await readdir(directoryPair.input)).filter(name => name.endsWith('.svg'))
 
   for (const svgFileName of fileNames) {
     try {
@@ -49,7 +49,7 @@ async function generateSVGComponents(directoryPair: SVGDirectorySourceAndOutput)
       const svg = await readFile(iconPath, 'utf-8')
       const id = path.basename(svgFileName, '.svg')
       const $ = load(svg, {
-        xmlMode: true,
+        xmlMode: true
       })
       const cname = uppercamelcase(id)
       const fileName = `${cname}.tsx`
@@ -63,7 +63,7 @@ async function generateSVGComponents(directoryPair: SVGDirectorySourceAndOutput)
       delete svgAttribs.xmlns
       const attribsOfInterest: Record<string, any> = {}
 
-      Object.keys(svgAttribs).forEach((key) => {
+      Object.keys(svgAttribs).forEach(key => {
         if (
           ![
             'height',
@@ -72,7 +72,7 @@ async function generateSVGComponents(directoryPair: SVGDirectorySourceAndOutput)
             'fill',
             'stroke-width',
             'stroke-linecap',
-            'stroke-linejoin',
+            'stroke-linejoin'
           ].includes(key)
         ) {
           attribsOfInterest[key] = svgAttribs[key]
@@ -80,9 +80,11 @@ async function generateSVGComponents(directoryPair: SVGDirectorySourceAndOutput)
       })
 
       $('*').each((_, el: any) => {
-        Object.keys(el.attribs).forEach((x) => {
+        Object.keys(el.attribs).forEach(x => {
           if (x.includes('-')) {
-            $(el).attr(camelcase(x), el.attribs[x]).removeAttr(x)
+            $(el)
+              .attr(camelcase(x), el.attribs[x])
+              .removeAttr(x)
           }
           if (x === 'stroke') {
             $(el).attr(x, 'currentColor')
@@ -91,7 +93,7 @@ async function generateSVGComponents(directoryPair: SVGDirectorySourceAndOutput)
 
         // For every element that is NOT svg ...
         if (el.name !== 'svg') {
-          Object.keys(attribsOfInterest).forEach((key) => {
+          Object.keys(attribsOfInterest).forEach(key => {
             $(el).attr(camelcase(key), attribsOfInterest[key])
           })
         }
@@ -218,7 +220,7 @@ const eslint = new ESLint({ fix: true })
 async function eslintFormat(inSource: string): Promise<string | undefined> {
   const out = await eslint.lintText(inSource, {
     // eslint wants a file to use for determining format and it actually has to exist 🙄
-    filePath: './src/scripts/componentize-icons-eslint-dummy-file.tsx',
+    filePath: './src/scripts/componentize-icons-eslint-dummy-file.tsx'
   })
   return out?.[0]?.output
 }

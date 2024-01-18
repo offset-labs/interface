@@ -1,5 +1,5 @@
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { BigNumber } from 'ethers'
 import { convertScientificNotationToNumber } from 'utilities/src/format/convertScientificNotation'
 import { logger } from 'utilities/src/logger/logger'
@@ -9,7 +9,7 @@ const ALL_NUMBERS_OR_SEPARATOR_REGEX = /^\d*\.?,?\d*$/
 
 export enum ValueType {
   'Raw' = 'uint256', // integer format (the "raw" uint256) - usually used in smart contracts / how data is stored on-chain
-  'Exact' = 'float', // float format (the "exact" human readable number) - the typical way to display token amounts to users
+  'Exact' = 'float' // float format (the "exact" human readable number) - the typical way to display token amounts to users
 }
 
 /**
@@ -25,7 +25,7 @@ export enum ValueType {
 export function getCurrencyAmount<T extends Currency>({
   value,
   valueType = ValueType.Raw,
-  currency,
+  currency
 }: {
   value?: string
   valueType: ValueType
@@ -47,7 +47,7 @@ export function getCurrencyAmount<T extends Currency>({
     logger.error(error, {
       tags: {
         file: 'getCurrencyAmount',
-        function: 'getCurrencyAmount',
+        function: 'getCurrencyAmount'
       },
       extra: {
         value,
@@ -55,8 +55,8 @@ export function getCurrencyAmount<T extends Currency>({
         symbol: currency.symbol,
         chain: currency.chainId,
         address: currency.wrapped.address,
-        decimals: currency.decimals,
-      },
+        decimals: currency.decimals
+      }
     })
 
     return null
@@ -65,7 +65,7 @@ export function getCurrencyAmount<T extends Currency>({
 
 const sanitizeTokenAmount = ({
   value,
-  valueType,
+  valueType
 }: {
   value: string
   valueType: ValueType

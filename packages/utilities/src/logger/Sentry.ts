@@ -20,5 +20,5 @@ export const Sentry: ISentry = {
   },
   captureMessage: () => {
     throw new NotImplementedError('Sentry not implemented')
-  },
+  }
 }

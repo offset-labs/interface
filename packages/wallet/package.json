@@ -6,6 +6,8 @@
     "@ethersproject/bignumber": "5.7.0",
     "@ethersproject/providers": "5.7.2",
     "@ethersproject/units": "5.7.0",
+    "@offsetcarbon/sdk-core": "4.0.13",
+    "@offsetcarbon/v3-sdk": "3.10.1",
     "@redux-saga/core": "1.2.3",
     "@reduxjs/toolkit": "1.9.3",
     "@tamagui/animations-react-native": "1.74.16",

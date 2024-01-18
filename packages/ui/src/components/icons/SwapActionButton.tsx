@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [SwapActionButton, AnimatedSwapActionButton] = createIcon({
   name: 'SwapActionButton',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 19 18" {...props}>
       <G clipPath="url(#clip0_4054_133249)">
         <Path
@@ -21,5 +21,5 @@ export const [SwapActionButton, AnimatedSwapActionButton] = createIcon({
         </ClipPath>
       </Defs>
     </Svg>
-  ),
+  )
 })

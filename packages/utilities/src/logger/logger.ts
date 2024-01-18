@@ -30,7 +30,7 @@ export const logger = {
   warn: (fileName: string, functionName: string, message: string, ...args: unknown[]): void =>
     logMessage('warn', fileName, functionName, message, ...args),
   error: (error: unknown, captureContext: LoggerErrorContext): void =>
-    logException(error, captureContext),
+    logException(error, captureContext)
 }
 
 function logMessage(

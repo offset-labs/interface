@@ -10,5 +10,5 @@ export const zIndices = {
   offcanvas: 1050,
   modal: 1060,
   popover: 1070,
-  tooltip: 1080,
+  tooltip: 1080
 }

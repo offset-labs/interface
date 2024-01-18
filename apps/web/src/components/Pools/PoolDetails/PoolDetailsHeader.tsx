@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId, Currency } from '@uniswap/sdk-core'
+import { ChainId, Currency } from '@offsetcarbon/sdk-core'
 import blankTokenUrl from 'assets/svg/blank_token.svg'
 import Column from 'components/Column'
 import { ChainLogo } from 'components/Logo/ChainLogo'

@@ -12,7 +12,7 @@ export const Separator = styled(Stack, {
 
   variants: {
     test: {
-      ok: {},
+      ok: {}
     },
 
     vertical: {
@@ -27,8 +27,8 @@ export const Separator = styled(Stack, {
         width: 0,
         maxWidth: 0,
         borderBottomWidth: 0,
-        borderRightWidth: 0.25,
-      },
-    },
-  } as const,
+        borderRightWidth: 0.25
+      }
+    }
+  } as const
 })

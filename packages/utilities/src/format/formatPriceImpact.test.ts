@@ -1,4 +1,4 @@
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@offsetcarbon/sdk-core'
 import { formatPriceImpact } from './formatPriceImpact'
 
 describe('formatPriceImpact', () => {

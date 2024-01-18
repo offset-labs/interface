@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Profile, AnimatedProfile] = createIcon({
   name: 'Profile',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Path
         d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
@@ -22,5 +22,5 @@ export const [Profile, AnimatedProfile] = createIcon({
         strokeWidth="2"
       />
     </Svg>
-  ),
+  )
 })

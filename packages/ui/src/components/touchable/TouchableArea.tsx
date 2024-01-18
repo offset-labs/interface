@@ -6,7 +6,7 @@ import {
   useAnimatedStyle,
   useSharedValue,
   withDelay,
-  withTiming,
+  withTiming
 } from 'react-native-reanimated'
 import { usePropsAndStyle } from 'tamagui'
 import { withAnimated } from 'ui/src/components/factories/animated'
@@ -101,12 +101,12 @@ export function TouchableArea({
     onLongPress,
     activeOpacity,
     hitSlop: hitSlop || defaultHitslopInset,
-    testID,
+    testID
   }
 
   const animatedStyle = useAnimatedStyle(() => {
     return {
-      transform: [{ scale: scale.value }],
+      transform: [{ scale: scale.value }]
     }
   })
 
@@ -114,7 +114,8 @@ export function TouchableArea({
     <AnimatedTouchableBox
       {...baseProps}
       disabled={disabled}
-      style={[scaleTo ? animatedStyle : null, style, restStyles]}>
+      style={[scaleTo ? animatedStyle : null, style, restStyles]}
+    >
       {children}
     </AnimatedTouchableBox>
   )

@@ -1,5 +1,5 @@
 import { t } from '@lingui/macro'
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import { showTestnetsAtom } from 'components/AccountDrawer/TestnetsToggle'
 import { BaseButton } from 'components/Button'

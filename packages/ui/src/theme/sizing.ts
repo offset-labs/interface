@@ -5,5 +5,5 @@ export const defaultHitslopInset = {
   top: defaultHitslop,
   bottom: defaultHitslop,
   left: defaultHitslop,
-  right: defaultHitslop,
+  right: defaultHitslop
 }

@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import AppRpcProvider from 'rpc/AppRpcProvider'
 import AppStaticJsonRpcProvider from 'rpc/StaticJsonRpcProvider'
 import StaticJsonRpcProvider from 'rpc/StaticJsonRpcProvider'
@@ -23,6 +23,7 @@ export const RPC_PROVIDERS: { [key in SupportedInterfaceChain]: StaticJsonRpcPro
   [ChainId.OPTIMISM_GOERLI]: providerFactory(ChainId.OPTIMISM_GOERLI),
   [ChainId.ARBITRUM_ONE]: providerFactory(ChainId.ARBITRUM_ONE),
   [ChainId.ARBITRUM_GOERLI]: providerFactory(ChainId.ARBITRUM_GOERLI),
+  [ChainId.ARBITRUM_SEPOLIA]: providerFactory(ChainId.ARBITRUM_SEPOLIA),
   [ChainId.POLYGON]: providerFactory(ChainId.POLYGON),
   [ChainId.POLYGON_MUMBAI]: providerFactory(ChainId.POLYGON_MUMBAI),
   [ChainId.CELO]: providerFactory(ChainId.CELO),
@@ -40,6 +41,7 @@ export const DEPRECATED_RPC_PROVIDERS: { [key in SupportedInterfaceChain]: AppSt
   [ChainId.OPTIMISM_GOERLI]: providerFactory(ChainId.OPTIMISM_GOERLI),
   [ChainId.ARBITRUM_ONE]: providerFactory(ChainId.ARBITRUM_ONE),
   [ChainId.ARBITRUM_GOERLI]: providerFactory(ChainId.ARBITRUM_GOERLI),
+  [ChainId.ARBITRUM_SEPOLIA]: providerFactory(ChainId.ARBITRUM_SEPOLIA),
   [ChainId.POLYGON]: providerFactory(ChainId.POLYGON),
   [ChainId.POLYGON_MUMBAI]: providerFactory(ChainId.POLYGON_MUMBAI),
   [ChainId.CELO]: providerFactory(ChainId.CELO),

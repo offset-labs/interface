@@ -6,9 +6,9 @@ export const breakpoints = {
   lg: 768,
   xl: 1024,
   xxl: 1280,
-  xxxl: 1536,
+  xxxl: 1536
 }
 
 export const heightBreakpoints = {
-  short: 736,
+  short: 736
 }

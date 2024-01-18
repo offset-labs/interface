@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
 import { createColumnHelper } from '@tanstack/react-table'
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import { Table } from 'components/Table'
 import { Cell } from 'components/Table/Cell'
 import { StyledExternalLink, StyledInternalLink } from 'components/Table/styled'

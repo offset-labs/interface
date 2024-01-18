@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { LocalizationContextState } from 'wallet/src/features/language/LocalizationContext'
 import { getValidAddress, shortenAddress } from 'wallet/src/utils/addresses'
 import { getCurrencyAmount, ValueType } from 'wallet/src/utils/getCurrencyAmount'
@@ -13,7 +13,7 @@ export function getFormattedCurrencyAmount(
   const currencyAmount = getCurrencyAmount({
     value: currencyAmountRaw,
     valueType,
-    currency,
+    currency
   })
 
   if (!currencyAmount) return ''

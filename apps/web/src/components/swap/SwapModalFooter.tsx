@@ -1,6 +1,6 @@
 import { t, Trans } from '@lingui/macro'
 import { BrowserEvent, InterfaceElementName, SwapEventName } from '@uniswap/analytics-events'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@offsetcarbon/sdk-core'
 import { TraceEvent } from 'analytics'
 import AnimatedDropdown from 'components/AnimatedDropdown'
 import Column from 'components/Column'

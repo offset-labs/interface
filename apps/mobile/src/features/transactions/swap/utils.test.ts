@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, TradeType } from '@offsetcarbon/sdk-core'
 import { Route } from '@uniswap/v3-sdk'
 import { getWrapType, requireAcceptNewTrade } from 'src/features/transactions/swap/utils'
 import { ChainId } from 'wallet/src/constants/chains'

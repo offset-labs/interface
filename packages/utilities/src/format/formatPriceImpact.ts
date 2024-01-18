@@ -1,4 +1,4 @@
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@offsetcarbon/sdk-core'
 
 export function formatPriceImpact(priceImpact: Percent | undefined): string {
   if (!priceImpact) return '-'

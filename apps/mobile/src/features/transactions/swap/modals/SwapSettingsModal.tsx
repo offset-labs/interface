@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import { BottomSheetTextInput } from '@gorhom/bottom-sheet'
 import { Trade } from '@uniswap/router-sdk'
-import { Currency, TradeType } from '@uniswap/sdk-core'
+import { Currency, TradeType } from '@offsetcarbon/sdk-core'
 import { impactAsync } from 'expo-haptics'
 import React, { useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'

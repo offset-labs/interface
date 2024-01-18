@@ -4,7 +4,7 @@ import {
   identify,
   init,
   setDeviceId,
-  track,
+  track
 } from '@amplitude/analytics-react-native'
 import { getUniqueId } from 'react-native-device-info'
 import { ApplicationTransport } from 'utilities/src/telemetry/analytics/ApplicationTransport'
@@ -12,7 +12,7 @@ import { Analytics, UserPropertyValue } from './analytics'
 import {
   AMPLITUDE_NATIVE_TRACKING_OPTIONS,
   AMPLITUDE_SHARED_TRACKING_OPTIONS,
-  DUMMY_KEY,
+  DUMMY_KEY
 } from './constants'
 import { generateErrorLoggers } from './logging'
 
@@ -29,8 +29,8 @@ export const analytics: Analytics = {
           // Disable tracking of private user information by Amplitude
           trackingOptions: {
             ...AMPLITUDE_SHARED_TRACKING_OPTIONS,
-            ...AMPLITUDE_NATIVE_TRACKING_OPTIONS,
-          },
+            ...AMPLITUDE_NATIVE_TRACKING_OPTIONS
+          }
         }
       )
       setDeviceId(await getUniqueId()) // Ensure we're using the same deviceId across Amplitude and Statsig
@@ -49,5 +49,5 @@ export const analytics: Analytics = {
   setUserProperty(property: string, value: UserPropertyValue): void {
     errorLoggers.setUserProperty(property, value)
     identify(new Identify().set(property, value))
-  },
+  }
 }

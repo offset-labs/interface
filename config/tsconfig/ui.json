@@ -10,5 +10,6 @@
     "noEmit": false,
     "target": "es2019",
     "types": ["node"],
+    "composite": true,
   }
 }

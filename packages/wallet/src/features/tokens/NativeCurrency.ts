@@ -1,5 +1,5 @@
 // adapted from https://github.com/Uniswap/interface/src/constants/tokens.ts
-import { Currency, NativeCurrency as NativeCurrencyClass, Token } from '@uniswap/sdk-core'
+import { Currency, NativeCurrency as NativeCurrencyClass, Token } from '@offsetcarbon/sdk-core'
 import { getNativeAddress } from 'wallet/src/constants/addresses'
 import { ChainId, CHAIN_INFO } from 'wallet/src/constants/chains'
 import { wrappedNativeCurrency } from 'wallet/src/constants/tokens'

@@ -10,7 +10,7 @@ import {
   UniconAttributes,
   UniconAttributesArray,
   UniconAttributesToIndices,
-  UniconNumOptions,
+  UniconNumOptions
 } from './types'
 
 const NUM_CHARS_TO_USE_PER_ATTRIBUTE = 2
@@ -30,7 +30,7 @@ export const deriveUniconAttributeIndices = (
     [UniconAttributes.GradientStart]: 0,
     [UniconAttributes.GradientEnd]: 0,
     [UniconAttributes.Container]: 0,
-    [UniconAttributes.Shape]: 0,
+    [UniconAttributes.Shape]: 0
   } as UniconAttributesToIndices
   for (const a of UniconAttributesArray) {
     const optionHex = hexAddr.slice(
@@ -52,7 +52,7 @@ export const getUniconAttributeData = (
       gradientStarts[attributeIndices[UniconAttributes.GradientStart]],
     [UniconAttributes.GradientEnd]: gradientEnds[attributeIndices[UniconAttributes.GradientEnd]],
     [UniconAttributes.Container]: containerPaths[attributeIndices[UniconAttributes.Container]],
-    [UniconAttributes.Shape]: emblemPaths[attributeIndices[UniconAttributes.Shape]],
+    [UniconAttributes.Shape]: emblemPaths[attributeIndices[UniconAttributes.Shape]]
   } as UniconAttributeData
 }
 
@@ -68,7 +68,7 @@ export const useUniconColors = (
     return {
       gradientStart: '$accent1',
       gradientEnd: '$accent2',
-      glow: '$accent1',
+      glow: '$accent1'
     }
 
   const attributeData = getUniconAttributeData(attributeIndices)
@@ -77,13 +77,13 @@ export const useUniconColors = (
     return {
       gradientStart: '$accent1',
       gradientEnd: '$accent2',
-      glow: '$accent1',
+      glow: '$accent1'
     }
 
   return {
     gradientStart: attributeData[UniconAttributes.GradientStart].toString(),
     gradientEnd: attributeData[UniconAttributes.GradientEnd].toString(),
-    glow: blurColor.toString(),
+    glow: blurColor.toString()
   }
 }
 

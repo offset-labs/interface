@@ -17,30 +17,30 @@ export const UNITAGS_BANNER_VERTICAL = require('./misc/unitags-banner-v.png')
 
 export const ONBOARDING_LANDING_LIGHT = {
   ios: require(`./backgrounds/onboarding-landing-static-light.png`),
-  android: require(`./backgrounds/onboarding-landing-static-light.png`),
+  android: require(`./backgrounds/onboarding-landing-static-light.png`)
 }
 
 export const ONBOARDING_LANDING_DARK = {
   ios: require(`./backgrounds/onboarding-landing-static-dark.png`),
-  android: require(`./backgrounds/onboarding-landing-static-dark.png`),
+  android: require(`./backgrounds/onboarding-landing-static-dark.png`)
 }
 
 export const ONBOARDING_NOTIFICATIONS_DARK = {
   ios: require(`./backgrounds/ios/notifications-dark.png`),
-  android: require(`./backgrounds/android/notifications-dark.png`),
+  android: require(`./backgrounds/android/notifications-dark.png`)
 }
 export const ONBOARDING_NOTIFICATIONS_LIGHT = {
   ios: require(`./backgrounds/ios/notifications-light.png`),
-  android: require(`./backgrounds/android/notifications-light.png`),
+  android: require(`./backgrounds/android/notifications-light.png`)
 }
 export const FOR_CONNECTING_BACKGROUND_DARK = require('./backgrounds/for-connecting-dark.png')
 export const FOR_CONNECTING_BACKGROUND_LIGHT = require('./backgrounds/for-connecting-light.png')
 
 export const SECURITY_SCREEN_BACKGROUND_DARK = {
   ios: require(`./backgrounds/ios/security-background-dark.png`),
-  android: require(`./backgrounds/android/security-background-dark.png`),
+  android: require(`./backgrounds/android/security-background-dark.png`)
 }
 export const SECURITY_SCREEN_BACKGROUND_LIGHT = {
   ios: require(`./backgrounds/ios/security-background-light.png`),
-  android: require(`./backgrounds/android/security-background-light.png`),
+  android: require(`./backgrounds/android/security-background-light.png`)
 }

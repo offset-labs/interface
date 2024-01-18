@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 
 import { Chain } from './__generated__/types-and-hooks'
 import { getValidUrlChainName, isSupportedGQLChain, supportedChainIdFromGQLChain } from './util'

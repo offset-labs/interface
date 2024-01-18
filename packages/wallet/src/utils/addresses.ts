@@ -3,7 +3,7 @@ import { logger, utils } from 'ethers'
 export enum AddressStringFormat {
   Lowercase,
   Uppercase,
-  Shortened,
+  Shortened
 }
 
 /**

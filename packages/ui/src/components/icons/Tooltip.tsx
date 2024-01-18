@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Tooltip, AnimatedTooltip] = createIcon({
   name: 'Tooltip',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 20 20" {...props}>
       <Path
         d="M10 18.3a8.3 8.3 0 1 0 0-16.6 8.3 8.3 0 0 0 0 16.6Z"
@@ -29,5 +29,5 @@ export const [Tooltip, AnimatedTooltip] = createIcon({
         strokeWidth="1.5"
       />
     </Svg>
-  ),
+  )
 })

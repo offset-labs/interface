@@ -1,4 +1,4 @@
-import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@uniswap/sdk-core'
+import { ChainId, SUPPORTED_CHAINS, SupportedChainsType } from '@offsetcarbon/sdk-core'
 
 export const CHAIN_IDS_TO_NAMES = {
   [ChainId.MAINNET]: 'mainnet',
@@ -10,6 +10,7 @@ export const CHAIN_IDS_TO_NAMES = {
   [ChainId.CELO_ALFAJORES]: 'celo_alfajores',
   [ChainId.ARBITRUM_ONE]: 'arbitrum',
   [ChainId.ARBITRUM_GOERLI]: 'arbitrum_goerli',
+  [ChainId.ARBITRUM_SEPOLIA]: 'arbitrum_sepolia',
   [ChainId.OPTIMISM]: 'optimism',
   [ChainId.OPTIMISM_GOERLI]: 'optimism_goerli',
   [ChainId.BNB]: 'bnb',

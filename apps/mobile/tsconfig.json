@@ -4,7 +4,7 @@
   "extends": "tsconfig/expo.json",
   "references": [
     {
-      "path": "../../packages/ui"
+      "path": "../../packages/ui",
     },
     {
       "path": "../../packages/utilities"
@@ -15,5 +15,6 @@
   ],
   "compilerOptions": {
     "baseUrl": "./",
+    "composite": true
   }
 }

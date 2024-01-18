@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { getNativeAddress, getWrappedNativeAddress } from 'wallet/src/constants/addresses'
 import { ChainId } from 'wallet/src/constants/chains'
 import { toSupportedChainId } from 'wallet/src/features/chains/utils'
@@ -11,7 +11,7 @@ export type CurrencyId = string
 export enum SwapRouterNativeAssets {
   MATIC = 'MATIC',
   BNB = 'BNB',
-  ETH = 'ETH',
+  ETH = 'ETH'
 }
 
 export function currencyId(currency: Currency): CurrencyId {

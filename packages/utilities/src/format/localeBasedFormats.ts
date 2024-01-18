@@ -8,7 +8,7 @@ const numberFormatCache: Record<string, Intl.NumberFormat> = {}
 function getNumberFormat({
   name,
   locale,
-  props,
+  props
 }: {
   name: string
   locale: Parameters<typeof Intl.NumberFormat>[0]
@@ -35,10 +35,10 @@ export const StandardCurrency: FormatCreator = {
       props: {
         notation: 'standard',
         style: 'currency',
-        currency: currencyCode,
-      },
+        currency: currencyCode
+      }
     })
-  },
+  }
 }
 
 export const SmallestNumCurrency: FormatCreator = {
@@ -50,10 +50,10 @@ export const SmallestNumCurrency: FormatCreator = {
         notation: 'standard',
         maximumFractionDigits: 20, // max allowed digits
         currency: currencyCode,
-        style: 'currency',
-      },
+        style: 'currency'
+      }
     })
-  },
+  }
 }
 
 export const FiveDecimalsMaxTwoDecimalsMin: FormatCreator = {
@@ -64,10 +64,10 @@ export const FiveDecimalsMaxTwoDecimalsMin: FormatCreator = {
       props: {
         notation: 'standard',
         maximumFractionDigits: 5,
-        minimumFractionDigits: 2,
-      },
+        minimumFractionDigits: 2
+      }
     })
-  },
+  }
 }
 
 export const FiveDecimalsMaxTwoDecimalsMinNoCommas: FormatCreator = {
@@ -79,10 +79,10 @@ export const FiveDecimalsMaxTwoDecimalsMinNoCommas: FormatCreator = {
         notation: 'standard',
         maximumFractionDigits: 5,
         minimumFractionDigits: 2,
-        useGrouping: false,
-      },
+        useGrouping: false
+      }
     })
-  },
+  }
 }
 
 export const NoDecimals: FormatCreator = {
@@ -93,10 +93,10 @@ export const NoDecimals: FormatCreator = {
       props: {
         notation: 'standard',
         maximumFractionDigits: 0,
-        minimumFractionDigits: 0,
-      },
+        minimumFractionDigits: 0
+      }
     })
-  },
+  }
 }
 
 export const ThreeDecimals: FormatCreator = {
@@ -107,10 +107,10 @@ export const ThreeDecimals: FormatCreator = {
       props: {
         notation: 'standard',
         maximumFractionDigits: 3,
-        minimumFractionDigits: 3,
-      },
+        minimumFractionDigits: 3
+      }
     })
-  },
+  }
 }
 
 export const ThreeDecimalsCurrency: FormatCreator = {
@@ -123,10 +123,10 @@ export const ThreeDecimalsCurrency: FormatCreator = {
         maximumFractionDigits: 3,
         minimumFractionDigits: 3,
         currency: currencyCode,
-        style: 'currency',
-      },
+        style: 'currency'
+      }
     })
-  },
+  }
 }
 
 export const TwoDecimalsCurrency: FormatCreator = {
@@ -139,10 +139,10 @@ export const TwoDecimalsCurrency: FormatCreator = {
         maximumFractionDigits: 2,
         minimumFractionDigits: 2,
         currency: currencyCode,
-        style: 'currency',
-      },
+        style: 'currency'
+      }
     })
-  },
+  }
 }
 
 export const ShorthandTwoDecimalsCurrency: FormatCreator = {
@@ -155,10 +155,10 @@ export const ShorthandTwoDecimalsCurrency: FormatCreator = {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
         currency: currencyCode,
-        style: 'currency',
-      },
+        style: 'currency'
+      }
     })
-  },
+  }
 }
 
 export const ShorthandOneDecimalsCurrency: FormatCreator = {
@@ -171,10 +171,10 @@ export const ShorthandOneDecimalsCurrency: FormatCreator = {
         minimumFractionDigits: 1,
         maximumFractionDigits: 1,
         currency: currencyCode,
-        style: 'currency',
-      },
+        style: 'currency'
+      }
     })
-  },
+  }
 }
 
 export const ThreeSigFigsCurrency: FormatCreator = {
@@ -187,10 +187,10 @@ export const ThreeSigFigsCurrency: FormatCreator = {
         minimumSignificantDigits: 3,
         maximumSignificantDigits: 3,
         currency: currencyCode,
-        style: 'currency',
-      },
+        style: 'currency'
+      }
     })
-  },
+  }
 }
 
 export const TwoDecimals: FormatCreator = {
@@ -201,10 +201,10 @@ export const TwoDecimals: FormatCreator = {
       props: {
         notation: 'standard',
         maximumFractionDigits: 2,
-        minimumFractionDigits: 2,
-      },
+        minimumFractionDigits: 2
+      }
     })
-  },
+  }
 }
 
 export const ShorthandOneDecimal: FormatCreator = {
@@ -215,10 +215,10 @@ export const ShorthandOneDecimal: FormatCreator = {
       props: {
         notation: 'compact',
         minimumFractionDigits: 1,
-        maximumFractionDigits: 1,
-      },
+        maximumFractionDigits: 1
+      }
     })
-  },
+  }
 }
 
 export const ShorthandTwoDecimals: FormatCreator = {
@@ -229,10 +229,10 @@ export const ShorthandTwoDecimals: FormatCreator = {
       props: {
         notation: 'compact',
         minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      },
+        maximumFractionDigits: 2
+      }
     })
-  },
+  }
 }
 
 export const SixSigFigsTwoDecimals: FormatCreator = {
@@ -245,10 +245,10 @@ export const SixSigFigsTwoDecimals: FormatCreator = {
         maximumSignificantDigits: 6,
         minimumSignificantDigits: 3,
         maximumFractionDigits: 2,
-        minimumFractionDigits: 2,
-      },
+        minimumFractionDigits: 2
+      }
     })
-  },
+  }
 }
 
 export const SixSigFigsNoCommas: FormatCreator = {
@@ -259,10 +259,10 @@ export const SixSigFigsNoCommas: FormatCreator = {
       props: {
         notation: 'standard',
         maximumSignificantDigits: 6,
-        useGrouping: false,
-      },
+        useGrouping: false
+      }
     })
-  },
+  }
 }
 
 export const SixSigFigsTwoDecimalsNoCommas: FormatCreator = {
@@ -276,10 +276,10 @@ export const SixSigFigsTwoDecimalsNoCommas: FormatCreator = {
         minimumSignificantDigits: 3,
         maximumFractionDigits: 2,
         minimumFractionDigits: 2,
-        useGrouping: false,
-      },
+        useGrouping: false
+      }
     })
-  },
+  }
 }
 
 export const NoTrailingDecimalsPercentages: FormatCreator = {
@@ -291,10 +291,10 @@ export const NoTrailingDecimalsPercentages: FormatCreator = {
         notation: 'standard',
         style: 'percent',
         minimumFractionDigits: 0,
-        maximumFractionDigits: 2,
-      },
+        maximumFractionDigits: 2
+      }
     })
-  },
+  }
 }
 
 export const TwoDecimalsPercentages: FormatCreator = {
@@ -306,10 +306,10 @@ export const TwoDecimalsPercentages: FormatCreator = {
         notation: 'standard',
         style: 'percent',
         minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      },
+        maximumFractionDigits: 2
+      }
     })
-  },
+  }
 }
 
 export interface FormatCreator {
@@ -351,7 +351,7 @@ export const tokenNonTxFormatter: FormatterRule[] = [
   { upperBound: 1, formatter: ThreeDecimals },
   { upperBound: 1e6, formatter: TwoDecimals },
   { upperBound: 1e15, formatter: ShorthandTwoDecimals },
-  { upperBound: Infinity, formatter: '>999T' },
+  { upperBound: Infinity, formatter: '>999T' }
 ]
 
 export const tokenTxFormatter: FormatterRule[] = [
@@ -359,20 +359,20 @@ export const tokenTxFormatter: FormatterRule[] = [
   { upperBound: 0.00001, formatter: '<0.00001' },
   { upperBound: 1, formatter: FiveDecimalsMaxTwoDecimalsMin },
   { upperBound: 10000, formatter: SixSigFigsTwoDecimals },
-  { upperBound: Infinity, formatter: TwoDecimals },
+  { upperBound: Infinity, formatter: TwoDecimals }
 ]
 
 export const swapTradeAmountFormatter: FormatterRule[] = [
   { exact: 0, formatter: '0' },
   { upperBound: 0.1, formatter: SixSigFigsNoCommas },
   { upperBound: 1, formatter: FiveDecimalsMaxTwoDecimalsMinNoCommas },
-  { upperBound: Infinity, formatter: SixSigFigsTwoDecimalsNoCommas },
+  { upperBound: Infinity, formatter: SixSigFigsTwoDecimalsNoCommas }
 ]
 
 export const swapPriceFormatter: FormatterRule[] = [
   { exact: 0, formatter: '0' },
   { upperBound: 0.00001, formatter: '<0.00001' },
-  ...swapTradeAmountFormatter,
+  ...swapTradeAmountFormatter
 ]
 
 export const fiatTokenDetailsFormatter: FormatterRule[] = [
@@ -380,12 +380,12 @@ export const fiatTokenDetailsFormatter: FormatterRule[] = [
     upperBound: 0.00000001,
     overrideValue: 0.00000001,
     formatter: SmallestNumCurrency,
-    postFormatModifier: (formatted: string) => `<${formatted}`,
+    postFormatModifier: (formatted: string) => `<${formatted}`
   },
   { upperBound: 0.1, formatter: ThreeSigFigsCurrency },
   { upperBound: 1.05, formatter: ThreeDecimalsCurrency },
   { upperBound: 1e6, formatter: TwoDecimalsCurrency },
-  { upperBound: Infinity, formatter: ShorthandTwoDecimalsCurrency },
+  { upperBound: Infinity, formatter: ShorthandTwoDecimalsCurrency }
 ]
 
 export const fiatTokenPricesFormatter: FormatterRule[] = [
@@ -393,11 +393,11 @@ export const fiatTokenPricesFormatter: FormatterRule[] = [
     upperBound: 0.00000001,
     overrideValue: 0.00000001,
     formatter: SmallestNumCurrency,
-    postFormatModifier: (formatted: string) => `<${formatted}`,
+    postFormatModifier: (formatted: string) => `<${formatted}`
   },
   { upperBound: 1, formatter: ThreeSigFigsCurrency },
   { upperBound: 1e6, formatter: TwoDecimalsCurrency },
-  { upperBound: Infinity, formatter: ShorthandTwoDecimalsCurrency },
+  { upperBound: Infinity, formatter: ShorthandTwoDecimalsCurrency }
 ]
 
 export const fiatTokenStatsFormatter: FormatterRule[] = [
@@ -407,10 +407,10 @@ export const fiatTokenStatsFormatter: FormatterRule[] = [
     upperBound: 0.01,
     overrideValue: 0.01,
     formatter: SmallestNumCurrency,
-    postFormatModifier: (formatted: string) => `<${formatted}`,
+    postFormatModifier: (formatted: string) => `<${formatted}`
   },
   { upperBound: 1000, formatter: TwoDecimalsCurrency },
-  { upperBound: Infinity, formatter: ShorthandOneDecimalsCurrency },
+  { upperBound: Infinity, formatter: ShorthandOneDecimalsCurrency }
 ]
 
 export const fiatGasPriceFormatter: FormatterRule[] = [
@@ -419,30 +419,30 @@ export const fiatGasPriceFormatter: FormatterRule[] = [
     upperBound: 0.01,
     overrideValue: 0.01,
     formatter: SmallestNumCurrency,
-    postFormatModifier: (formatted: string) => `<${formatted}`,
+    postFormatModifier: (formatted: string) => `<${formatted}`
   },
   { upperBound: 1e6, formatter: TwoDecimalsCurrency },
-  { upperBound: Infinity, formatter: ShorthandTwoDecimalsCurrency },
+  { upperBound: Infinity, formatter: ShorthandTwoDecimalsCurrency }
 ]
 
 export const fiatStandardFormatter: FormatterRule[] = [
   {
     upperBound: Infinity,
-    formatter: StandardCurrency,
-  },
+    formatter: StandardCurrency
+  }
 ]
 
 export const fiatTokenQuantityFormatter = [
   {
     exact: 0,
-    formatter: StandardCurrency,
+    formatter: StandardCurrency
   },
-  ...fiatGasPriceFormatter,
+  ...fiatGasPriceFormatter
 ]
 
 export const portfolioBalanceFormatter: FormatterRule[] = [
   { exact: 0, formatter: StandardCurrency },
-  { upperBound: Infinity, formatter: TwoDecimalsCurrency },
+  { upperBound: Infinity, formatter: TwoDecimalsCurrency }
 ]
 
 export const ntfTokenFloorPriceFormatter: FormatterRule[] = [
@@ -451,17 +451,17 @@ export const ntfTokenFloorPriceFormatter: FormatterRule[] = [
   { upperBound: 1, formatter: ThreeDecimals },
   { upperBound: 1000, formatter: TwoDecimals },
   { upperBound: 1e15, formatter: ShorthandTwoDecimals },
-  { upperBound: Infinity, formatter: '>999T' },
+  { upperBound: Infinity, formatter: '>999T' }
 ]
 
 export const ntfCollectionStatsFormatter: FormatterRule[] = [
   { upperBound: 1000, formatter: NoDecimals },
-  { upperBound: Infinity, formatter: ShorthandOneDecimal },
+  { upperBound: Infinity, formatter: ShorthandOneDecimal }
 ]
 
 export const percentagesFormatter: FormatterRule[] = [
   { upperBound: 0.01, formatter: TwoDecimalsPercentages },
-  { upperBound: Infinity, formatter: NoTrailingDecimalsPercentages },
+  { upperBound: Infinity, formatter: NoTrailingDecimalsPercentages }
 ]
 
 export const TYPE_TO_FORMATTER_RULES = {
@@ -478,5 +478,5 @@ export const TYPE_TO_FORMATTER_RULES = {
   [NumberType.PortfolioBalance]: portfolioBalanceFormatter,
   [NumberType.NFTTokenFloorPrice]: ntfTokenFloorPriceFormatter,
   [NumberType.NFTCollectionStats]: ntfCollectionStatsFormatter,
-  [NumberType.Percentage]: percentagesFormatter,
+  [NumberType.Percentage]: percentagesFormatter
 }

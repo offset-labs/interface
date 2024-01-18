@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [ScanQrWc, AnimatedScanQrWc] = createIcon({
   name: 'ScanQrWc',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 27 24" {...props}>
       <Path
         d="M11 3H8C7.46957 3 6.96086 3.21071 6.58579 3.58579C6.21071 3.96086 6 4.46957 6 5V8M24 8V5C24 4.46957 23.7893 3.96086 23.4142 3.58579C23.0391 3.21071 22.5304 3 22 3H19M19 21H22C22.5304 21 23.0391 20.7893 23.4142 20.4142C23.7893 20.0391 24 19.5304 24 19V16"
@@ -20,5 +20,5 @@ export const [ScanQrWc, AnimatedScanQrWc] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#3396FF',
+  defaultFill: '#3396FF'
 })

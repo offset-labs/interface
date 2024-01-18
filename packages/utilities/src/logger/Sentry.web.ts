@@ -33,5 +33,5 @@ export function captureMessage(
 
 export const Sentry: ISentry = {
   captureException,
-  captureMessage,
+  captureMessage
 } as ISentry

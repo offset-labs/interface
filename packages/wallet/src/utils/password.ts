@@ -43,6 +43,6 @@ export function validatePassword(password: string): PasswordValidationResult {
   const warning = translateWarning(feedback.warning)
   return {
     valid: false,
-    validationErrorString: warning,
+    validationErrorString: warning
   }
 }

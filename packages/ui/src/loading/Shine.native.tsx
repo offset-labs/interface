@@ -7,7 +7,7 @@ import Reanimated, {
   useAnimatedStyle,
   useSharedValue,
   withRepeat,
-  withTiming,
+  withTiming
 } from 'react-native-reanimated'
 import { Flex } from 'ui/src/components/layout'
 import { useSporeColors } from 'ui/src/hooks/useSporeColors'
@@ -35,9 +35,9 @@ export function Shine({ children, disabled }: ShineProps): JSX.Element {
           xPosition.value,
           [0, 1],
           [layout ? -layout.width : 0, layout ? layout.width : 0]
-        ),
-      },
-    ],
+        )
+      }
+    ]
   }))
 
   if (!layout) {
@@ -46,7 +46,8 @@ export function Shine({ children, disabled }: ShineProps): JSX.Element {
         opacity={0}
         onLayout={(event: {
           nativeEvent: { layout: React.SetStateAction<LayoutRectangle | null | undefined> }
-        }): void => setLayout(event.nativeEvent.layout)}>
+        }): void => setLayout(event.nativeEvent.layout)}
+      >
         {children}
       </Flex>
     )
@@ -61,7 +62,7 @@ export function Shine({ children, disabled }: ShineProps): JSX.Element {
             colors={[
               opacify(0, colors.neutral2.val.slice(0, 7)),
               opacify(44, colors.surface2.val.slice(0, 7)),
-              opacify(0, colors.neutral2.val.slice(0, 7)),
+              opacify(0, colors.neutral2.val.slice(0, 7))
             ]}
             end={{ x: 1, y: 0 }}
             start={{ x: 0, y: 0 }}

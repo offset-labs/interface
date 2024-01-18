@@ -1,4 +1,4 @@
-import { Percent, Token } from '@uniswap/sdk-core'
+import { Percent, Token } from '@offsetcarbon/sdk-core'
 import { ChainId } from 'wallet/src/constants/chains'
 import { Trade } from 'wallet/src/features/transactions/swap/useTrade'
 

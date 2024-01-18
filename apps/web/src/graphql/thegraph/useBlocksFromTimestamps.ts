@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import { START_BLOCKS } from 'constants/chainInfo'
 import gql from 'graphql-tag'
 import { useEffect, useMemo, useState } from 'react'

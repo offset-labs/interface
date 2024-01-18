@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Globe, AnimatedGlobe] = createIcon({
   name: 'Globe',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 20 21" {...props}>
       <Path
         d="M9.99996 18.9582C14.6023 18.9582 18.3333 15.2272 18.3333 10.6248C18.3333 6.02246 14.6023 2.2915 9.99996 2.2915C5.39759 2.2915 1.66663 6.02246 1.66663 10.6248C1.66663 15.2272 5.39759 18.9582 9.99996 18.9582Z"
@@ -29,5 +29,5 @@ export const [Globe, AnimatedGlobe] = createIcon({
         strokeWidth="2"
       />
     </Svg>
-  ),
+  )
 })

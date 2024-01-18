@@ -7,14 +7,15 @@ type HiddenFromScreenReadersProps = PropsWithChildren<{
 
 export function HiddenFromScreenReaders({
   children,
-  style,
+  style
 }: HiddenFromScreenReadersProps): JSX.Element {
   // TODO(MOB-1533) Make hidden from screen reader functionality work with web too
   return (
     <View
       accessibilityElementsHidden={true}
       importantForAccessibility="no-hide-descendants"
-      style={style}>
+      style={style}
+    >
       {children}
     </View>
   )

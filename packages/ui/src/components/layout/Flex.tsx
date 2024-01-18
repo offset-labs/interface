@@ -4,7 +4,7 @@ import { withAnimated } from 'ui/src/components/factories/animated'
 export const flexStyles = {
   fill: { flex: 1 },
   grow: { flexGrow: 1 },
-  shrink: { flexShrink: 1 },
+  shrink: { flexShrink: 1 }
 }
 
 export type FlexProps = StackProps & {
@@ -21,35 +21,35 @@ export const Flex = styled(Stack, {
   variants: {
     row: {
       true: {
-        flexDirection: 'row',
-      },
+        flexDirection: 'row'
+      }
     },
 
     shrink: {
       true: {
-        flexShrink: 1,
-      },
+        flexShrink: 1
+      }
     },
 
     grow: {
       true: {
-        flexGrow: 1,
-      },
+        flexGrow: 1
+      }
     },
 
     fill: {
       true: {
-        flex: 1,
-      },
+        flex: 1
+      }
     },
 
     centered: {
       true: {
         alignItems: 'center',
-        justifyContent: 'center',
-      },
-    },
-  } as const,
+        justifyContent: 'center'
+      }
+    }
+  } as const
 })
 
 export const AnimatedFlex = withAnimated(Flex)

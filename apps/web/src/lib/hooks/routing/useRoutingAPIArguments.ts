@@ -1,5 +1,5 @@
 import { SkipToken, skipToken } from '@reduxjs/toolkit/query/react'
-import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, TradeType } from '@offsetcarbon/sdk-core'
 import { useGatewayDNSUpdateEnabled } from 'featureFlags/flags/gatewayDNSUpdate'
 import { useUniswapXSyntheticQuoteEnabled } from 'featureFlags/flags/uniswapXUseSyntheticQuote'
 import { useFeesEnabled } from 'featureFlags/flags/useFees'

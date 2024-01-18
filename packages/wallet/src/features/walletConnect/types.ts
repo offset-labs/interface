@@ -3,7 +3,7 @@ export enum WalletConnectEvent {
   Disconnected,
   NetworkChanged,
   TransactionConfirmed,
-  TransactionFailed,
+  TransactionFailed
 }
 
 // derived from this list https://docs.walletconnect.com/json-rpc-api-methods/ethereum#eth_signtypeddata
@@ -14,12 +14,12 @@ export enum EthMethod {
   SignTypedDataV4 = 'eth_signTypedData_v4',
   SwitchChain = 'wallet_switchEthereumChain',
   AddChain = 'wallet_addEthereumChain',
-  PersonalSign = 'personal_sign',
+  PersonalSign = 'personal_sign'
 }
 
 export enum EthEvent {
   AccountsChanged = 'accountsChanged',
-  ChainChanged = 'chainChanged',
+  ChainChanged = 'chainChanged'
 }
 
 export enum WCEventType {
@@ -29,12 +29,12 @@ export enum WCEventType {
   SessionPending = 'session_pending',
   Error = 'error',
   SignRequest = 'sign_request',
-  TransactionRequest = 'transaction_request',
+  TransactionRequest = 'transaction_request'
 }
 
 export enum WCRequestOutcome {
   Confirm = 'confirm',
-  Reject = 'reject',
+  Reject = 'reject'
 }
 
 export type EthSignMethod =

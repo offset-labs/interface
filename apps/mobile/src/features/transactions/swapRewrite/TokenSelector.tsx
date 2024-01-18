@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import React, { useCallback } from 'react'
 import { SearchContext } from 'src/components/explore/search/SearchContext'
 import { flowToModalName } from 'src/components/TokenSelector/flowToModalName'

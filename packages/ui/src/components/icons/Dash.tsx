@@ -5,9 +5,9 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Dash, AnimatedDash] = createIcon({
   name: 'Dash',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 12 2" {...props}>
       <Path d="M0 1h12" stroke="currentColor" strokeWidth="2" />
     </Svg>
-  ),
+  )
 })

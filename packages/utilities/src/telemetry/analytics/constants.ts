@@ -5,10 +5,10 @@ export const AMPLITUDE_SHARED_TRACKING_OPTIONS = {
   city: false,
   dma: false, // designated market area
   ipAddress: false,
-  region: false,
+  region: false
 }
 
 export const AMPLITUDE_NATIVE_TRACKING_OPTIONS = {
   adid: false,
-  carrier: false,
+  carrier: false
 }

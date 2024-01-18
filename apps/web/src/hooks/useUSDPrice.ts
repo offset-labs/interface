@@ -1,5 +1,6 @@
 import { NetworkStatus } from '@apollo/client'
-import { ChainId, Currency, CurrencyAmount, Price, TradeType } from '@uniswap/sdk-core'
+import { Price } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount, TradeType } from '@offsetcarbon/sdk-core'
 import { nativeOnChain } from 'constants/tokens'
 import { Chain, useTokenSpotPriceQuery } from 'graphql/data/__generated__/types-and-hooks'
 import { chainIdToBackendName, isGqlSupportedChain, PollingInterval } from 'graphql/data/util'

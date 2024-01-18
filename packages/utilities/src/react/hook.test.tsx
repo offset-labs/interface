@@ -12,8 +12,8 @@ describe('usePrevious', () => {
   })
 
   it('returns the previous value', () => {
-    const { result, rerender } = renderHook((props) => usePrevious(props), {
-      initialProps: 1,
+    const { result, rerender } = renderHook(props => usePrevious(props), {
+      initialProps: 1
     })
 
     rerender(2)
@@ -25,7 +25,7 @@ describe('usePrevious', () => {
 })
 
 describe('useAsyncData', () => {
-  const promise = new Promise((resolve) => {
+  const promise = new Promise(resolve => {
     setTimeout(() => {
       resolve('data')
     }, 1000)
@@ -93,7 +93,7 @@ describe('useAsyncData', () => {
     const { rerender, waitForNextUpdate } = renderHook(
       ({ asyncCallback, onCancel }) => useAsyncData(asyncCallback, onCancel),
       {
-        initialProps: { asyncCallback: initialCallback, onCancel: cancel },
+        initialProps: { asyncCallback: initialCallback, onCancel: cancel }
       }
     )
 
@@ -117,7 +117,7 @@ describe('useAsyncData', () => {
     const { rerender, waitForNextUpdate } = renderHook(
       ({ asyncCallback, onCancel }) => useAsyncData(asyncCallback, onCancel),
       {
-        initialProps: { asyncCallback: initialCallback, onCancel: cancel },
+        initialProps: { asyncCallback: initialCallback, onCancel: cancel }
       }
     )
     const newCallback = jest.fn().mockResolvedValue('data')
@@ -166,13 +166,13 @@ describe('useMemoCompare', () => {
   it('returns the same value when the comparison function returns true', () => {
     const initialValue = { a: 1 }
     const { result, rerender } = renderHook(
-      (props) =>
+      props =>
         useMemoCompare(
           () => props,
           () => true
         ),
       {
-        initialProps: initialValue,
+        initialProps: initialValue
       }
     )
 
@@ -182,13 +182,13 @@ describe('useMemoCompare', () => {
 
   it('returns the new value when the comparison function returns false', () => {
     const { result, rerender } = renderHook(
-      (props) =>
+      props =>
         useMemoCompare(
           () => props,
           () => false
         ),
       {
-        initialProps: { a: 1 },
+        initialProps: { a: 1 }
       }
     )
 

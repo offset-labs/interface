@@ -33,9 +33,9 @@ export function useAsyncData<T>(
   }>({
     data: {
       res: undefined,
-      input: asyncCallback,
+      input: asyncCallback
     },
-    isLoading: true,
+    isLoading: true
   })
 
   const isMountedRef = useRef(true)
@@ -48,7 +48,7 @@ export function useAsyncData<T>(
 
   useEffect(() => {
     if (!state.isLoading) {
-      setState((currentState) => ({ ...currentState, isLoading: true }))
+      setState(currentState => ({ ...currentState, isLoading: true }))
     }
 
     let isCancelled = false
@@ -63,8 +63,8 @@ export function useAsyncData<T>(
         isLoading: false,
         data: {
           res,
-          input: asyncCallback,
-        },
+          input: asyncCallback
+        }
       })
     }
 
@@ -119,7 +119,7 @@ export function useForwardRef<T extends object>(
       new Proxy({} as T, {
         get: (_, prop): T[keyof T] | undefined => {
           return localRef.current?.[prop as keyof T]
-        },
+        }
       })
   )
 }

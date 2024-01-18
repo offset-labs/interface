@@ -23,5 +23,5 @@ export const analytics: Analytics = {
   },
   setUserProperty(_property: string, _value: UserPropertyValue): void {
     throw new NotImplementedError('setUserProperty')
-  },
+  }
 }

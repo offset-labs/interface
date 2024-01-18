@@ -5,14 +5,14 @@ export enum UniconAttributes {
   GradientStart = 0,
   GradientEnd = 1,
   Container = 2,
-  Shape = 3,
+  Shape = 3
 }
 
 export const UniconAttributesArray: UniconAttributes[] = [
   UniconAttributes.GradientStart,
   UniconAttributes.GradientEnd,
   UniconAttributes.Container,
-  UniconAttributes.Shape,
+  UniconAttributes.Shape
 ]
 
 export interface UniconAttributesToIndices {
@@ -39,7 +39,7 @@ export const gradientStarts = [
   '#FF6F1E',
   '#F14544',
   '#FC72FF',
-  '#C0C0C0',
+  '#C0C0C0'
 ]
 
 export const blurs = [
@@ -52,7 +52,7 @@ export const blurs = [
   '#C8BB9B',
   '#9D99F5',
   '#A26AF3',
-  '#D3EBA3',
+  '#D3EBA3'
 ]
 
 export const gradientEnds = [
@@ -65,12 +65,12 @@ export const gradientEnds = [
   '#FBAA7F',
   '#FEA79B',
   '#F5A1F5',
-  '#B8C3B7',
+  '#B8C3B7'
 ]
 
 export const UniconNumOptions = {
   [UniconAttributes.GradientStart]: gradientStarts.length,
   [UniconAttributes.GradientEnd]: gradientEnds.length,
   [UniconAttributes.Container]: containerPaths.length,
-  [UniconAttributes.Shape]: emblemPaths.length,
+  [UniconAttributes.Shape]: emblemPaths.length
 }

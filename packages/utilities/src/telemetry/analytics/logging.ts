@@ -31,6 +31,6 @@ export function generateErrorLoggers(fileName: string): ErrorLoggers {
       if (__DEV__) {
         logger.info('analytics', 'setUserProperty', `property: ${property}, value: ${value}`)
       }
-    },
+    }
   }
 }

@@ -1,5 +1,5 @@
 import { ApolloError } from '@apollo/client'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@offsetcarbon/sdk-core'
 import { useEffect, useState } from 'react'
 import { ChainId } from 'wallet/src/constants/chains'
 import {

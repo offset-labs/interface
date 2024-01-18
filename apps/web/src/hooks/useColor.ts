@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@uniswap/sdk-core'
+import { ChainId, Currency } from '@offsetcarbon/sdk-core'
 import { DEFAULT_COLOR } from 'constants/tokenColors'
 import useTokenLogoSource from 'hooks/useAssetLogoSource'
 import { darken, lighten, rgb } from 'polished'

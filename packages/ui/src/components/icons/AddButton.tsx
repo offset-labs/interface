@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [AddButton, AnimatedAddButton] = createIcon({
   name: 'AddButton',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Path
         d="M12 7.625V16.375"
@@ -23,5 +23,5 @@ export const [AddButton, AnimatedAddButton] = createIcon({
       />
       <Rect height="22" rx="11" stroke="currentColor" strokeWidth="2" width="22" x="1" y="1" />
     </Svg>
-  ),
+  )
 })

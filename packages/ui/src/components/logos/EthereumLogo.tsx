@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [EthereumLogo, AnimatedEthereumLogo] = createIcon({
   name: 'EthereumLogo',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 20 20" {...props}>
       <G clipPath="url(#clip0_2_30)">
         <Rect fill="#EDF0F4" height="20" width="20" />
@@ -30,5 +30,5 @@ export const [EthereumLogo, AnimatedEthereumLogo] = createIcon({
       </Defs>
     </Svg>
   ),
-  defaultFill: '#EDF0F4',
+  defaultFill: '#EDF0F4'
 })

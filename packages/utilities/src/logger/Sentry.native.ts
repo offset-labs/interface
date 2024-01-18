@@ -30,11 +30,11 @@ export function captureMessage(
   SentryRN.captureMessage(message, {
     level,
     tags: { mobileContext: context },
-    ...(extraArgs ? { extra: { data: extraArgs } } : {}),
+    ...(extraArgs ? { extra: { data: extraArgs } } : {})
   })
 }
 
 export const Sentry: ISentry = {
   captureException,
-  captureMessage,
+  captureMessage
 } as ISentry

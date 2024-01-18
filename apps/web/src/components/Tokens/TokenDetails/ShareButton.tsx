@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { Share as ShareIcon } from 'components/Icons/Share'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { useInfoTDPEnabled } from 'featureFlags/flags/infoTDP'

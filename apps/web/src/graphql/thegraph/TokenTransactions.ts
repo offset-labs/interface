@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client'
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import { useTokenTransactionsQuery } from 'graphql/thegraph/__generated__/types-and-hooks'
 import { useCallback, useMemo, useRef } from 'react'
 

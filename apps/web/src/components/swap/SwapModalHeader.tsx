@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
+import { Currency, Percent, TradeType } from '@offsetcarbon/sdk-core'
 import Column, { AutoColumn } from 'components/Column'
 import { useNewSwapFlow } from 'featureFlags/flags/progressIndicatorV2'
 import { useUSDPrice } from 'hooks/useUSDPrice'

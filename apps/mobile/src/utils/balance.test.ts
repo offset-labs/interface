@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@offsetcarbon/sdk-core'
 import JSBI from 'jsbi'
 import {
   maxAmountSpend,

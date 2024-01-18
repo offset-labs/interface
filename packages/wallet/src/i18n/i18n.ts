@@ -38,7 +38,7 @@ export const resources = {
   'tr-TR': { translation: trTR },
   'uk-UA': { translation: ukUA },
   'ur-PK': { translation: urPK },
-  'vi-VN': { translation: viVN },
+  'vi-VN': { translation: viVN }
 }
 
 export const defaultNS = 'translation'
@@ -55,8 +55,8 @@ export function initializeTranslation(): void {
       lng: 'en-US',
       resources,
       interpolation: {
-        escapeValue: false, // react already safes from xss
-      },
+        escapeValue: false // react already safes from xss
+      }
     })
     .catch(() => undefined)
 }

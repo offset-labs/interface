@@ -13,7 +13,7 @@ import {
   useProps,
   withStaticProperties,
   wrapChildrenInText,
-  XStack,
+  XStack
 } from 'tamagui'
 import { IconProps } from 'ui/src/components/factories/createIcon'
 import { hapticFeedback } from 'ui/src/components/haptics/hapticFeedback'
@@ -37,12 +37,12 @@ const CustomButtonFrame = styled(XStack, {
   height: 'auto',
 
   hoverStyle: {
-    backgroundColor: '$backgroundHover',
+    backgroundColor: '$backgroundHover'
   },
 
   pressStyle: {
     backgroundColor: '$backgroundPress',
-    opacity: 0.7,
+    opacity: 0.7
   },
 
   variants: {
@@ -50,55 +50,55 @@ const CustomButtonFrame = styled(XStack, {
       small: {
         padding: '$spacing8',
         borderRadius: '$rounded8',
-        gap: '$spacing4',
+        gap: '$spacing4'
       },
       medium: {
         padding: '$spacing12',
         borderRadius: '$rounded16',
-        gap: '$spacing8',
+        gap: '$spacing8'
       },
       large: {
         padding: '$spacing16',
         paddingVertical: '$spacing16',
         borderRadius: '$rounded20',
-        gap: '$spacing12',
-      },
+        gap: '$spacing12'
+      }
     },
 
     fill: {
       true: {
-        flex: 1,
-      },
+        flex: 1
+      }
     },
 
     disabled: {
       true: {
         opacity: 0.4,
         pointerEvents: 'none',
-        userSelect: 'none',
-      },
+        userSelect: 'none'
+      }
     },
 
     fadeIn: {
       true: {
         enterStyle: {
-          opacity: 0,
-        },
-      },
+          opacity: 0
+        }
+      }
     },
 
     fadeOut: {
       true: {
         enterStyle: {
-          opacity: 0,
-        },
-      },
-    },
+          opacity: 0
+        }
+      }
+    }
   } as const,
 
   defaultVariants: {
-    size: 'medium',
-  },
+    size: 'medium'
+  }
 })
 
 const CustomButtonText = styled(Text, {
@@ -112,29 +112,29 @@ const CustomButtonText = styled(Text, {
       micro: {
         fontSize: '$micro',
         fontWeight: '$micro',
-        lineHeight: '$micro',
+        lineHeight: '$micro'
       },
       medium: {
         fontSize: '$medium',
         fontWeight: '$medium',
-        lineHeight: '$medium',
+        lineHeight: '$medium'
       },
       small: {
         fontSize: '$small',
         fontWeight: '$small',
-        lineHeight: '$small',
+        lineHeight: '$small'
       },
       large: {
         fontSize: '$large',
         fontWeight: '$large',
-        lineHeight: '$large',
-      },
-    },
+        lineHeight: '$large'
+      }
+    }
   } as const,
 
   defaultVariants: {
-    size: 'medium',
-  },
+    size: 'medium'
+  }
 })
 
 type CustomButtonProps = GetProps<typeof CustomButtonFrame>
@@ -186,17 +186,17 @@ const ButtonComponent = CustomButtonFrame.styleable<ButtonProps>((props, ref) =>
 })
 
 ButtonComponent.defaultProps = {
-  theme: 'primary',
+  theme: 'primary'
 }
 
 export const Button = withStaticProperties(ButtonComponent, {
-  Text: ButtonText,
+  Text: ButtonText
 })
 
 const buttonToIconSize: Record<ButtonSize, SpecificTokens> = {
   small: '$icon.12',
   medium: '$icon.20',
-  large: '$icon.24',
+  large: '$icon.24'
 }
 
 // we do a few things different from tamagui here, and also tamagui is deprecating useButton
@@ -217,7 +217,7 @@ function useButton<Props extends ButtonProps>(propsIn: Props) {
   } = propsIn
 
   const isNested = useContext(ButtonNestingContext)
-  const propsActive = useProps(propsIn) as unknown as ButtonProps
+  const propsActive = (useProps(propsIn) as unknown) as ButtonProps
   const size = propsActive.size || 'medium'
   const iconSize = getTokenValue(buttonToIconSize[size])
   const getThemedIcon = useGetThemedIcon({ size: iconSize, color })
@@ -230,7 +230,7 @@ function useButton<Props extends ButtonProps>(propsIn: Props) {
     {
       size,
       disabled: propsActive.disabled,
-      maxFontSizeMultiplier: 1.2,
+      maxFontSizeMultiplier: 1.2
     }
   )
 
@@ -240,7 +240,7 @@ function useButton<Props extends ButtonProps>(propsIn: Props) {
       propsActive.flexDirection === 'column' || propsActive.flexDirection === 'column-reverse'
         ? 'vertical'
         : 'horizontal',
-    children: [themedIcon, ...contents, themedIconAfter],
+    children: [themedIcon, ...contents, themedIconAfter]
   })
 
   // fixes SSR issue + DOM nesting issue of not allowing button in button
@@ -258,18 +258,18 @@ function useButton<Props extends ButtonProps>(propsIn: Props) {
       focusable: undefined,
       // even with tabIndex unset, it will keep focusStyle on web so disable it here
       focusStyle: {
-        borderColor: '$background',
-      },
+        borderColor: '$background'
+      }
     }),
     ...(tag && {
-      tag,
+      tag
     }),
     ...buttonFrameProps,
-    children: <ButtonNestingContext.Provider value={true}>{inner}</ButtonNestingContext.Provider>,
+    children: <ButtonNestingContext.Provider value={true}>{inner}</ButtonNestingContext.Provider>
   } as Props
 
   return {
     isNested,
-    props,
+    props
   }
 }

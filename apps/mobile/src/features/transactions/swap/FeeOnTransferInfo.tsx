@@ -1,4 +1,4 @@
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@offsetcarbon/sdk-core'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Flex, Icons, Text, TouchableArea } from 'ui/src'

@@ -1,4 +1,4 @@
-import { CurrencyAmount } from '@uniswap/sdk-core'
+import { CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { testSaga } from 'redux-saga-test-plan'
 import { Params, wrap } from 'src/features/transactions/swap/wrapSaga'
 import { ChainId } from 'wallet/src/constants/chains'

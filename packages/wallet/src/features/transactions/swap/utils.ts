@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { Trade } from 'wallet/src/features/transactions/swap/useTrade'
 import { areAddressesEqual } from 'wallet/src/utils/addresses'
 

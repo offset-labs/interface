@@ -6,7 +6,7 @@ import Reanimated, {
   useAnimatedStyle,
   useSharedValue,
   withRepeat,
-  withTiming,
+  withTiming
 } from 'react-native-reanimated'
 import { LinearGradient } from 'tamagui/linear-gradient'
 import { Flex } from 'ui/src/components/layout/Flex'
@@ -34,9 +34,9 @@ export function Skeleton({ children, contrast, disabled }: SkeletonProps): JSX.E
           xPosition.value,
           [0, 1],
           [layout ? -layout.width : 0, layout ? layout.width : 0]
-        ),
-      },
-    ],
+        )
+      }
+    ]
   }))
 
   if (disabled) {
@@ -49,7 +49,8 @@ export function Skeleton({ children, contrast, disabled }: SkeletonProps): JSX.E
         opacity={0}
         onLayout={(event: {
           nativeEvent: { layout: SetStateAction<LayoutRectangle | null | undefined> }
-        }): void => setLayout(event.nativeEvent.layout)}>
+        }): void => setLayout(event.nativeEvent.layout)}
+      >
         {children}
       </Flex>
     )
@@ -61,8 +62,9 @@ export function Skeleton({ children, contrast, disabled }: SkeletonProps): JSX.E
       sentry-label="Shimmer"
       style={{
         width: layout.width,
-        height: layout.height,
-      }}>
+        height: layout.height
+      }}
+    >
       <Flex grow backgroundColor={contrast ? '$neutral2' : '$surface3'} overflow="hidden" />
       <Reanimated.View style={[StyleSheet.absoluteFill, animatedStyle]}>
         <MaskedView
@@ -74,7 +76,8 @@ export function Skeleton({ children, contrast, disabled }: SkeletonProps): JSX.E
               start={{ x: 0, y: 0 }}
             />
           }
-          style={StyleSheet.absoluteFill}>
+          style={StyleSheet.absoluteFill}
+        >
           <Flex backgroundColor="$surface2" style={StyleSheet.absoluteFill} />
         </MaskedView>
       </Reanimated.View>

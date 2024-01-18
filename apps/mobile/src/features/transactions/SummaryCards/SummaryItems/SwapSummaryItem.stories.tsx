@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { TradeType } from '@uniswap/sdk-core'
+import { TradeType } from '@offsetcarbon/sdk-core'
 import React from 'react'
 import TransactionSummaryLayout from 'src/features/transactions/SummaryCards/TransactionSummaryLayout'
 import { ChainId } from 'wallet/src/constants/chains'

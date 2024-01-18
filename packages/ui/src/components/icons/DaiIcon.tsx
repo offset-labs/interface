@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [DaiIcon, AnimatedDaiIcon] = createIcon({
   name: 'DaiIcon',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Path
         d="M12 0C18.628 0 24 5.37305 24 12C24 18.628 18.628 24 12 24C5.37305 24 0 18.6275 0 12C0 5.37305 5.37305 0 12 0Z"
@@ -19,5 +19,5 @@ export const [DaiIcon, AnimatedDaiIcon] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#F5AC37',
+  defaultFill: '#F5AC37'
 })

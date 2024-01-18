@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { CurrencyInfo } from 'wallet/src/features/dataApi/types'
 import { CurrencyField } from 'wallet/src/features/transactions/transactionState/types'
 

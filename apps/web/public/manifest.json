@@ -1,10 +1,10 @@
 {
   "background_color": "#fff",
   "display": "standalone",
-  "homepage_url": "https://app.uniswap.org",
+  "homepage_url": "https://app.offsercarbon.xyz",
   "providedBy": {
-    "name": "Uniswap",
-    "url": "https://uniswap.org"
+    "name": "Offset",
+    "url": "https://offsercarbon.xyz"
   },
   "icons": [
     {
@@ -21,10 +21,13 @@
     }
   ],
   "orientation": "portrait",
-  "name": "Uniswap",
-  "description": "Swap or provide liquidity on the Uniswap Protocol",
+  "name": "Offset",
+  "description": "Swap or provide liquidity on the Offset Protocol",
   "iconPath": "./images/256x256_App_Icon_Pink.svg",
-  "short_name": "Uniswap",
+  "short_name": "Offset",
   "start_url": ".",
-  "theme_color": "#FC72FF"
+  "theme_color": "#FC72FF",
+  "content_security_policy": {
+    "extension_pages": "script-src 'wasm-unsafe-eval'; script-src 'self' 'wasm-unsafe-eval'; script-src 'self' 'unsafe-eval'; default-src 'self' style-src 'self' 'unsafe-inline'; default-src 'self';"
+  }
 }

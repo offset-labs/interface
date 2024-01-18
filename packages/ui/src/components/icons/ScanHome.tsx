@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [ScanHome, AnimatedScanHome] = createIcon({
   name: 'ScanHome',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 29 28" {...props}>
       <Path
         clipRule="evenodd"
@@ -14,5 +14,5 @@ export const [ScanHome, AnimatedScanHome] = createIcon({
         fillRule="evenodd"
       />
     </Svg>
-  ),
+  )
 })

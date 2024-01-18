@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { filter } from 'src/components/TokenSelector/filter'
 import { TokenOption } from 'src/components/TokenSelector/types'
 import { ChainId } from 'wallet/src/constants/chains'

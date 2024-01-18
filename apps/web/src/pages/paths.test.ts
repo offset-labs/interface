@@ -1,4 +1,4 @@
-import { ChainId, WETH9 } from '@uniswap/sdk-core'
+import { ChainId, WETH9 } from '@offsetcarbon/sdk-core'
 
 import { getDefaultTokensTitle, getExploreTitle, paths } from './paths'
 import { routes } from './RouteDefinitions'

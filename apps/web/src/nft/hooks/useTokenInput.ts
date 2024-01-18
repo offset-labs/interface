@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { TokenTradeInput } from 'graphql/data/__generated__/types-and-hooks'
 import { devtools } from 'zustand/middleware'
 import { shallow } from 'zustand/shallow'

@@ -1,4 +1,4 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import React from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 import { truncateDappName } from 'src/components/WalletConnect/ScanSheet/util'

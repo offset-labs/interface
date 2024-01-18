@@ -1,5 +1,5 @@
 import { useNetInfo } from '@react-native-community/netinfo'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@offsetcarbon/sdk-core'
 import _ from 'lodash'
 import { TFunction } from 'react-i18next'
 import { getNetworkWarning } from 'src/components/modals/WarningModal/constants'

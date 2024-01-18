@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Walletconnect, AnimatedWalletconnect] = createIcon({
   name: 'Walletconnect',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg height="185" viewBox="0 0 300 185" width="300" {...props}>
       <G fill="none" fillRule="evenodd" id="Page-1" stroke="currentColor" strokeWidth="1">
         <G fill={'currentColor' ?? '#3B99FC'} fillRule="nonzero" id="walletconnect-logo-alt">
@@ -17,5 +17,5 @@ export const [Walletconnect, AnimatedWalletconnect] = createIcon({
       </G>
     </Svg>
   ),
-  defaultFill: '#3B99FC',
+  defaultFill: '#3B99FC'
 })

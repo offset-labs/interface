@@ -5,7 +5,7 @@ export const inputStyles = {
     backgroundColor: '$surface2',
     borderWidth: 1,
     borderColor: '$neutral3',
-    outlineWidth: 0,
+    outlineWidth: 0
   },
-  inputHover: { borderWidth: 1, borderColor: '$surface3', outlineWidth: 0 },
+  inputHover: { borderWidth: 1, borderColor: '$surface3', outlineWidth: 0 }
 } as const

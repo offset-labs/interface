@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [AlertCircle, AnimatedAlertCircle] = createIcon({
   name: 'AlertCircle',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 22 22" {...props}>
       <Path
         d="M11 21a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"
@@ -29,5 +29,5 @@ export const [AlertCircle, AnimatedAlertCircle] = createIcon({
         strokeWidth="2"
       />
     </Svg>
-  ),
+  )
 })

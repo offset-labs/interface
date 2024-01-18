@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Sort, AnimatedSort] = createIcon({
   name: 'Sort',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 20 20" {...props}>
       <Path
         d="M10.8333 7.50008L14.1666 4.16675M14.1666 4.16675L17.5 7.50008M14.1666 4.16675V14.1667"
@@ -22,5 +22,5 @@ export const [Sort, AnimatedSort] = createIcon({
         strokeWidth="1.5"
       />
     </Svg>
-  ),
+  )
 })

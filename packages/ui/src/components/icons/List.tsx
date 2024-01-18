@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [List, AnimatedList] = createIcon({
   name: 'List',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Path
         d="M8 6H21"
@@ -50,5 +50,5 @@ export const [List, AnimatedList] = createIcon({
         strokeWidth="2"
       />
     </Svg>
-  ),
+  )
 })

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import JSBI from 'jsbi'
 import { ChainId } from 'wallet/src/constants/chains'
 import { getCurrencyAmount, ValueType } from 'wallet/src/utils/getCurrencyAmount'

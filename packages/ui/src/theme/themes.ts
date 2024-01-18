@@ -44,7 +44,7 @@ const light = {
   colorPress: colorsLight.accent1,
   colorFocus: colorsLight.accent1,
   shadowColor: colorsLight.none,
-  shadowColorHover: colorsLight.none,
+  shadowColorHover: colorsLight.none
 }
 
 type BaseTheme = typeof light
@@ -63,7 +63,7 @@ const dark: BaseTheme = {
   colorPress: colorsDark.accent1,
   colorFocus: colorsDark.accent1,
   shadowColor: colorsDark.none,
-  shadowColorHover: colorsDark.none,
+  shadowColorHover: colorsDark.none
 }
 
 // if you need to add non-token values, use createTheme
@@ -85,48 +85,48 @@ const dark: BaseTheme = {
 
 const light_branded: BaseTheme = {
   ...light,
-  color: colorsLight.accent1,
+  color: colorsLight.accent1
 }
 const dark_branded: BaseTheme = {
   ...dark,
-  color: colorsDark.accent1,
+  color: colorsDark.accent1
 }
 const light_primary: BaseTheme = {
-  ...light,
+  ...light
 }
 const dark_primary: BaseTheme = {
-  ...dark,
+  ...dark
 }
 const light_secondary: BaseTheme = {
-  ...light,
+  ...light
 }
 const dark_secondary: BaseTheme = {
   ...dark,
-  color: colorsDark.neutral2,
+  color: colorsDark.neutral2
 }
 const light_tertiary: BaseTheme = {
-  ...light,
+  ...light
 }
 const dark_tertiary: BaseTheme = {
-  ...dark,
+  ...dark
 }
 const light_outline: BaseTheme = {
-  ...light,
+  ...light
 }
 const dark_outline: BaseTheme = {
-  ...dark,
+  ...dark
 }
 const light_detrimental: BaseTheme = {
-  ...light,
+  ...light
 }
 const dark_detrimental: BaseTheme = {
-  ...dark,
+  ...dark
 }
 const light_warning: BaseTheme = {
-  ...light,
+  ...light
 }
 const dark_warning: BaseTheme = {
-  ...dark,
+  ...dark
 }
 
 // Button
@@ -137,7 +137,7 @@ const light_primary_Button: BaseTheme = {
   background: colorsLight.accent1,
   backgroundHover: hoverColor(colorsLight.accent1),
   backgroundPress: pressedColor(colorsLight.accent1),
-  color: colorsLight.sporeWhite,
+  color: colorsLight.sporeWhite
 }
 
 // theme: dark
@@ -146,7 +146,7 @@ const dark_primary_Button: BaseTheme = {
   background: colorsDark.accent1,
   backgroundHover: hoverColor(colorsDark.accent1),
   backgroundPress: pressedColor(colorsDark.accent1),
-  color: colorsDark.sporeWhite,
+  color: colorsDark.sporeWhite
 }
 
 // secondary
@@ -156,7 +156,7 @@ const light_secondary_Button: BaseTheme = {
   background: colorsLight.surface2,
   backgroundHover: hoverColor(colorsLight.surface2),
   backgroundPress: pressedColor(colorsLight.surface2),
-  color: colorsLight.sporeBlack,
+  color: colorsLight.sporeBlack
 }
 
 // theme: dark
@@ -165,7 +165,7 @@ const dark_secondary_Button: BaseTheme = {
   background: colorsDark.surface2,
   backgroundHover: hoverColor(colorsDark.surface2),
   backgroundPress: pressedColor(colorsDark.surface2),
-  color: colorsDark.sporeWhite,
+  color: colorsDark.sporeWhite
 }
 
 // tertiary
@@ -177,7 +177,7 @@ const light_tertiary_Button: BaseTheme = {
   backgroundHover: colorsLight.surface2,
   backgroundPress: colorsLight.surface2,
   borderColor: colorsLight.none,
-  color: colorsLight.neutral1,
+  color: colorsLight.neutral1
 }
 
 // theme: dark
@@ -188,7 +188,7 @@ const dark_tertiary_Button: BaseTheme = {
   backgroundHover: colorsDark.surface2,
   backgroundPress: colorsDark.surface2,
   borderColor: colorsDark.none,
-  color: colorsDark.neutral1,
+  color: colorsDark.neutral1
 }
 
 // outline
@@ -199,7 +199,7 @@ const light_outline_Button: BaseTheme = {
   backgroundHover: colorsLight.none,
   backgroundPress: colorsLight.none,
   borderColor: colorsLight.surface3,
-  color: colorsLight.neutral1,
+  color: colorsLight.neutral1
 }
 
 // theme: dark
@@ -209,7 +209,7 @@ const dark_outline_Button: BaseTheme = {
   backgroundHover: colorsDark.none,
   backgroundPress: colorsDark.none,
   borderColor: colorsDark.surface3,
-  color: colorsDark.neutral1,
+  color: colorsDark.neutral1
 }
 
 // detrimental
@@ -219,7 +219,7 @@ const light_detrimental_Button: BaseTheme = {
   background: colorsLight.DEP_accentCriticalSoft,
   backgroundHover: colorsLight.DEP_accentCriticalSoft,
   backgroundPress: colorsLight.DEP_accentCriticalSoft,
-  color: colorsLight.statusCritical,
+  color: colorsLight.statusCritical
 }
 
 // theme: dark
@@ -228,7 +228,7 @@ const dark_detrimental_Button: BaseTheme = {
   background: colorsDark.DEP_accentCriticalSoft,
   backgroundHover: colorsLight.DEP_accentCriticalSoft,
   backgroundPress: colorsLight.DEP_accentCriticalSoft,
-  color: colorsDark.statusCritical,
+  color: colorsDark.statusCritical
 }
 
 // warning
@@ -238,7 +238,7 @@ const light_warning_Button: BaseTheme = {
   background: colorsLight.DEP_accentWarningSoft,
   backgroundHover: colorsLight.DEP_accentWarningSoft,
   backgroundPress: colorsLight.DEP_accentWarningSoft,
-  color: colorsLight.DEP_accentWarning,
+  color: colorsLight.DEP_accentWarning
 }
 
 // theme: dark
@@ -247,7 +247,7 @@ const dark_warning_Button: BaseTheme = {
   background: colorsDark.DEP_accentWarningSoft,
   backgroundHover: colorsDark.DEP_accentWarningSoft,
   backgroundPress: colorsDark.DEP_accentWarningSoft,
-  color: colorsDark.DEP_accentWarning,
+  color: colorsDark.DEP_accentWarning
 }
 
 // combine and narrow theme types before exporting
@@ -279,7 +279,7 @@ const allThemes = {
   light_detrimental_Button,
   dark_detrimental_Button,
   light_warning_Button,
-  dark_warning_Button,
+  dark_warning_Button
 }
 
 type ThemeName = keyof typeof allThemes

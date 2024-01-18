@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [InfoCircle, AnimatedInfoCircle] = createIcon({
   name: 'InfoCircle',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Path
         d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
@@ -21,5 +21,5 @@ export const [InfoCircle, AnimatedInfoCircle] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#99A1BD24',
+  defaultFill: '#99A1BD24'
 })

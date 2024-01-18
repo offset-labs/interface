@@ -1,4 +1,4 @@
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 
 const INFURA_KEY = process.env.REACT_APP_INFURA_KEY
 if (typeof INFURA_KEY === 'undefined') {
@@ -74,6 +74,10 @@ export const FALLBACK_URLS = {
     // "Safe" URLs
     'https://goerli-rollup.arbitrum.io/rpc',
   ],
+  [ChainId.ARBITRUM_SEPOLIA]: [
+    // "Safe" URLs
+    'https://sepolia-rollup.arbitrum.io/rpc',
+  ],
   [ChainId.OPTIMISM]: [
     // "Safe" URLs
     'https://mainnet.optimism.io/',
@@ -145,6 +149,10 @@ export const RPC_URLS = {
   [ChainId.ARBITRUM_GOERLI]: [
     `https://arbitrum-goerli.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[ChainId.ARBITRUM_GOERLI],
+  ],
+  [ChainId.ARBITRUM_SEPOLIA]: [
+    `https://arbitrum-sepolia.infura.io/v3/${INFURA_KEY}`,
+    ...FALLBACK_URLS[ChainId.ARBITRUM_SEPOLIA],
   ],
   [ChainId.POLYGON]: [`https://polygon-mainnet.infura.io/v3/${INFURA_KEY}`, ...FALLBACK_URLS[ChainId.POLYGON]],
   [ChainId.POLYGON_MUMBAI]: [

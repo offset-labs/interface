@@ -1,4 +1,5 @@
-import { Price, Token } from '@uniswap/sdk-core'
+import { Price } from '@uniswap/sdk-core'
+import { Token } from '@offsetcarbon/sdk-core'
 import {
   encodeSqrtRatioX96,
   FeeAmount,

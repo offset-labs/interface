@@ -9,7 +9,7 @@ export function sendWalletAnalyticsEvent<EventName extends keyof WalletEventProp
 ): void {
   const [eventName, eventProperties] = args
   // note: can remove the as unknown case once there are events in ExtensionEventProperties
-  analytics.sendEvent(eventName, eventProperties as unknown as Record<string, unknown>)
+  analytics.sendEvent(eventName, (eventProperties as unknown) as Record<string, unknown>)
 }
 
 export async function sendWalletAppsFlyerEvent<

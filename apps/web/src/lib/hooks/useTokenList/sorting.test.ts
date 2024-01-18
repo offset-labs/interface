@@ -1,5 +1,5 @@
-import { ChainId } from '@uniswap/sdk-core'
-import { Token as InterfaceToken } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
+import { Token as InterfaceToken } from '@offsetcarbon/sdk-core'
 import { DAI, nativeOnChain, USDC_MAINNET, USDT, WBTC } from 'constants/tokens'
 import { Chain, Currency, Token, TokenBalance, TokenStandard } from 'graphql/data/__generated__/types-and-hooks'
 import { renderHook } from 'test-utils/render'

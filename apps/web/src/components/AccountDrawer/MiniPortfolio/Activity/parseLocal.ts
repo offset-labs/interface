@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { t } from '@lingui/macro'
-import { ChainId, Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount, TradeType } from '@offsetcarbon/sdk-core'
 import UniswapXBolt from 'assets/svg/bolt.svg'
 import { nativeOnChain } from 'constants/tokens'
 import { TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'

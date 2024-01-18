@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@offsetcarbon/sdk-core'
 import { flattenObjectOfObjects, unnestObject } from './objects'
 
 const DAI = new Token(1, '0x6b175474e89094c44da98b954eedeac495271d0f', 18, 'DAI', 'Dai Stablecoin')
@@ -23,12 +23,12 @@ describe(flattenObjectOfObjects, () => {
       flattenObjectOfObjects({
         1: {
           [DAI.address]: DAI,
-          [USDC.address]: USDC,
+          [USDC.address]: USDC
         },
         5: {},
         42161: {
-          [USDC_ARBITRUM.address]: USDC_ARBITRUM,
-        },
+          [USDC_ARBITRUM.address]: USDC_ARBITRUM
+        }
       })
     ).toEqual([DAI, USDC, USDC_ARBITRUM])
 
@@ -48,7 +48,7 @@ describe(unnestObject, () => {
       'a.1': 2,
       'a.2': 3,
       'b.0.c': 1,
-      'b.1.d': 2,
+      'b.1.d': 2
     })
   })
 })

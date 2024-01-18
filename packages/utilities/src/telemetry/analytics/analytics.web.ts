@@ -15,7 +15,7 @@ export const analytics: Analytics = {
         {
           transportProvider, // Used to support custom reverse proxy header
           // Disable tracking of private user information by Amplitude
-          trackingOptions: AMPLITUDE_SHARED_TRACKING_OPTIONS,
+          trackingOptions: AMPLITUDE_SHARED_TRACKING_OPTIONS
         }
       )
     } catch (error) {
@@ -33,5 +33,5 @@ export const analytics: Analytics = {
   setUserProperty(property: string, value: UserPropertyValue): void {
     loggers.setUserProperty(property, value)
     identify(new Identify().set(property, value))
-  },
+  }
 }

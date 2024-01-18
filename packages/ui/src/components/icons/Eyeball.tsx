@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Eyeball, AnimatedEyeball] = createIcon({
   name: 'Eyeball',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 18 13" {...props}>
       <Path
         clipRule="evenodd"
@@ -20,11 +20,12 @@ export const [Eyeball, AnimatedEyeball] = createIcon({
           x1="2.95348"
           x2="15.3182"
           y1="0.984849"
-          y2="19.8227">
+          y2="19.8227"
+        >
           <Stop stopColor="#A2CDFF" />
           <Stop offset="1" stopColor="#A3A2FF" />
         </LinearGradient>
       </Defs>
     </Svg>
-  ),
+  )
 })

@@ -1,5 +1,5 @@
 import userEvent from '@testing-library/user-event'
-import { ChainId } from '@uniswap/sdk-core'
+import { ChainId } from '@offsetcarbon/sdk-core'
 import { nativeOnChain } from 'constants/tokens'
 import { TokenFromList } from 'state/lists/tokenFromList'
 import { act, render, screen } from 'test-utils/render'

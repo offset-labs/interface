@@ -1,4 +1,4 @@
-import { ChainId, Currency } from '@uniswap/sdk-core'
+import { ChainId, Currency } from '@offsetcarbon/sdk-core'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { Chain, TokenStandard } from 'graphql/data/__generated__/types-and-hooks'
 import { supportedChainIdFromGQLChain } from 'graphql/data/util'

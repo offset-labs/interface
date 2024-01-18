@@ -1,9 +1,9 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import {
   FormatterRule,
   StandardCurrency,
   TwoDecimalsCurrency,
-  TYPE_TO_FORMATTER_RULES,
+  TYPE_TO_FORMATTER_RULES
 } from 'utilities/src/format/localeBasedFormats'
 import { NumberType } from 'utilities/src/format/types'
 
@@ -26,7 +26,7 @@ export function formatNumber({
   locale,
   currencyCode = 'USD',
   type = NumberType.TokenNonTx,
-  placeholder = '-',
+  placeholder = '-'
 }: {
   input: number | null | undefined
   locale: string
@@ -52,7 +52,7 @@ export function formatCurrencyAmount({
   amount,
   locale,
   type = NumberType.TokenNonTx,
-  placeholder,
+  placeholder
 }: {
   amount?: CurrencyAmount<Currency> | null | undefined
   locale: string
@@ -63,7 +63,7 @@ export function formatCurrencyAmount({
     input: amount ? parseFloat(amount.toFixed()) : undefined,
     locale,
     type,
-    placeholder,
+    placeholder
   })
 }
 
@@ -72,7 +72,7 @@ export function formatNumberOrString({
   locale,
   currencyCode,
   type,
-  placeholder = '-',
+  placeholder = '-'
 }: {
   price: Maybe<number | string>
   locale: string
@@ -99,7 +99,7 @@ export function addFiatSymbolToNumber({
   value,
   locale,
   currencyCode,
-  currencySymbol,
+  currencySymbol
 }: {
   value: Maybe<number | string>
   locale: string
@@ -169,6 +169,6 @@ export function getFiatCurrencyComponents(
     decimalSeparator,
     symbol,
     fullSymbol,
-    symbolAtFront,
+    symbolAtFront
   }
 }

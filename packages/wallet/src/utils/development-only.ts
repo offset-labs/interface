@@ -5,7 +5,7 @@ export const useLoadingTrigger = (ms = 2000): boolean => {
   const [isLoading, setIsLoading] = useState(false)
   const frequency = ms
 
-  useInterval(() => setIsLoading((prev) => !prev), frequency)
+  useInterval(() => setIsLoading(prev => !prev), frequency)
 
   return isLoading
 }

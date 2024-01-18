@@ -1,4 +1,4 @@
-import { Currency, V3_CORE_FACTORY_ADDRESSES } from '@uniswap/sdk-core'
+import { Currency, V3_CORE_FACTORY_ADDRESSES } from '@offsetcarbon/sdk-core'
 import { FeeAmount, Pool, TICK_SPACINGS, tickToPrice } from '@uniswap/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { useAllV3TicksQuery } from 'graphql/thegraph/__generated__/types-and-hooks'

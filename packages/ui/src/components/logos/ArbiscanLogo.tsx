@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [ArbiscanLogo, AnimatedArbiscanLogo] = createIcon({
   name: 'ArbiscanLogo',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 238 238" {...props}>
       <G clipPath="url(#clip0_4057_1924)">
         <Path
@@ -44,5 +44,5 @@ export const [ArbiscanLogo, AnimatedArbiscanLogo] = createIcon({
       </Defs>
     </Svg>
   ),
-  defaultFill: '#213147',
+  defaultFill: '#213147'
 })

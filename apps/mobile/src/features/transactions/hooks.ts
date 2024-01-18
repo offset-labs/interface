@@ -1,5 +1,5 @@
 import { AnyAction } from '@reduxjs/toolkit'
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@offsetcarbon/sdk-core'
 import { BigNumberish } from 'ethers'
 import { useCallback, useMemo } from 'react'
 import { SearchContext } from 'src/components/explore/search/SearchContext'

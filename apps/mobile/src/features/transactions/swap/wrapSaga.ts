@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount } from '@offsetcarbon/sdk-core'
 import { Contract, providers } from 'ethers'
 import { call } from 'typed-redux-saga'
 import { logger } from 'utilities/src/logger/logger'

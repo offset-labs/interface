@@ -5,7 +5,7 @@ import {
   transferTokenActions,
   transferTokenReducer,
   transferTokenSaga,
-  transferTokenSagaName,
+  transferTokenSagaName
 } from 'wallet/src/features/transactions/transfer/transferTokenSaga'
 import { SagaState } from 'wallet/src/utils/saga'
 
@@ -41,8 +41,8 @@ export const sharedMonitoredSagas: Record<string, MonitoredSaga> = {
     name: transferTokenSagaName,
     wrappedSaga: transferTokenSaga,
     reducer: transferTokenReducer,
-    actions: transferTokenActions,
-  },
+    actions: transferTokenActions
+  }
 }
 
 export function* rootSaga() {

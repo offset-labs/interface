@@ -17,14 +17,16 @@ export function TransactionLoader({ opacity }: TransactionLoaderProps): JSX.Elem
         alignItems="flex-start"
         gap="$spacing16"
         justifyContent="space-between"
-        py="$spacing12">
+        py="$spacing12"
+      >
         <Flex
           row
           shrink
           alignItems="center"
           gap="$spacing12"
           height="100%"
-          justifyContent="flex-start">
+          justifyContent="flex-start"
+        >
           <Flex
             centered
             bg="$surface2"

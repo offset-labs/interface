@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [PencilBox, AnimatedPencilBox] = createIcon({
   name: 'PencilBox',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" stroke="currentColor" viewBox="0 0 20 20" {...props}>
       <Path
         d="M9.2 3.3H3.3A1.7 1.7 0 0 0 1.7 5v11.7a1.7 1.7 0 0 0 1.6 1.6H15a1.7 1.7 0 0 0 1.7-1.6v-5.9"
@@ -22,5 +22,5 @@ export const [PencilBox, AnimatedPencilBox] = createIcon({
         strokeWidth="2"
       />
     </Svg>
-  ),
+  )
 })

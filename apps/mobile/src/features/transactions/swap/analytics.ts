@@ -1,5 +1,5 @@
 import { SwapEventName } from '@uniswap/analytics-events'
-import { Currency, TradeType } from '@uniswap/sdk-core'
+import { Currency, TradeType } from '@offsetcarbon/sdk-core'
 import { useEffect, useRef } from 'react'
 import { sendMobileAnalyticsEvent } from 'src/features/telemetry'
 import { NumberType } from 'utilities/src/format/types'

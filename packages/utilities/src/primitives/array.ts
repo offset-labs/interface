@@ -10,7 +10,7 @@ export function unique<T>(
 }
 
 export function next<T>(array: T[], current: T): T | undefined {
-  const i = array.findIndex((v) => v === current)
+  const i = array.findIndex(v => v === current)
   if (i < 0) return undefined
   return array[(i + 1) % array.length]
 }

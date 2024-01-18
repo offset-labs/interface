@@ -160,7 +160,7 @@ export const colors = {
   networkArbitrum: '#28A0F0',
   networkBase: '#2151F5',
   networkBnb: '#F0B90B',
-  fiatOnRampBanner: '#FB36D0',
+  fiatOnRampBanner: '#FB36D0'
 }
 
 // TODO: map named colors to new Spore colors
@@ -189,7 +189,7 @@ const sporeLight = {
 
   statusActive: '#236EFF',
   statusSuccess: '#40B66B',
-  statusCritical: '#FF5F52',
+  statusCritical: '#FF5F52'
 }
 
 const sporeDark = {
@@ -215,7 +215,7 @@ const sporeDark = {
 
   statusActive: '#236EFF',
   statusSuccess: '#40B66B',
-  statusCritical: '#FF5F52',
+  statusCritical: '#FF5F52'
 }
 
 export const colorsLight = {
@@ -274,7 +274,7 @@ export const colorsLight = {
   chain_42161: colors.networkArbitrum,
   chain_80001: colors.networkPolygon,
   chain_8453: colors.networkBase,
-  chain_56: colors.networkBnb,
+  chain_56: colors.networkBnb
 }
 
 export type ColorKeys = keyof typeof colorsLight
@@ -336,5 +336,5 @@ export const colorsDark = {
   chain_42161: colors.networkArbitrum,
   chain_80001: colors.networkPolygon,
   chain_8453: colors.networkBase,
-  chain_56: colors.networkBnb,
+  chain_56: colors.networkBnb
 }

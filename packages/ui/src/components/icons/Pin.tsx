@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Pin, AnimatedPin] = createIcon({
   name: 'Pin',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 20 20" {...props}>
       <G clipPath="url(#clip0_2274_114663)">
         <Path
@@ -27,5 +27,5 @@ export const [Pin, AnimatedPin] = createIcon({
       </Defs>
     </Svg>
   ),
-  defaultFill: '#FC72FF',
+  defaultFill: '#FC72FF'
 })

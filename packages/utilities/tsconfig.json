@@ -9,6 +9,7 @@
     "types": [
       "chrome",
       "jest"
-    ]
+    ],
+    "composite": true
   }
 }

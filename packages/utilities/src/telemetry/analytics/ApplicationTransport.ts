@@ -29,7 +29,7 @@ export class ApplicationTransport extends BaseTransport implements Transport {
     const headers: Record<string, string> = {
       'x-origin-application': this.appOrigin,
       'Content-Type': 'application/json',
-      Accept: '*/*',
+      Accept: '*/*'
     }
 
     if (this.origin) {
@@ -44,7 +44,7 @@ export class ApplicationTransport extends BaseTransport implements Transport {
       headers,
       keepalive: true, // allow the request to outlive the page
       body: JSON.stringify(payload),
-      method: 'POST',
+      method: 'POST'
     }
     const response = await fetch(this.serverUrl, request)
     const responseJSON: Record<string, unknown> = await response.json()

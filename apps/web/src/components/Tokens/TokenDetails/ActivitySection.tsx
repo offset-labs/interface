@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId, Token } from '@uniswap/sdk-core'
+import { ChainId, Token } from '@offsetcarbon/sdk-core'
 import Row from 'components/Row'
 import { useState } from 'react'
 import { Text } from 'rebass'

@@ -16,7 +16,8 @@ export function Shine({ children, disabled }: ShineProps): JSX.Element {
         opacity={0}
         onLayout={(event: {
           nativeEvent: { layout: React.SetStateAction<LayoutRectangle | null | undefined> }
-        }): void => setLayout(event.nativeEvent.layout)}>
+        }): void => setLayout(event.nativeEvent.layout)}
+      >
         {children}
       </Flex>
     )
@@ -29,9 +30,10 @@ export function Shine({ children, disabled }: ShineProps): JSX.Element {
       style={{
         WebkitMaskImage: `linear-gradient(-75deg, rgba(0,0,0,0.5) 30%, #000 50%, rgba(0,0,0,0.5) 70%)`,
         WebkitMaskSize: '200%',
-        animation: 'shine 1s linear infinite',
+        animation: 'shine 1s linear infinite'
       }}
-      width={layout.width}>
+      width={layout.width}
+    >
       {children}
     </Flex>
   )

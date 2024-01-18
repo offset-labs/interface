@@ -1,4 +1,5 @@
-import { ChainId, Currency, CurrencyAmount, Price, Token, TradeType } from '@uniswap/sdk-core'
+import { Price } from '@uniswap/sdk-core'
+import { ChainId, Currency, CurrencyAmount, Token, TradeType } from '@offsetcarbon/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { useMemo, useRef } from 'react'

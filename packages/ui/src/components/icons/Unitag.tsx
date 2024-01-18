@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Unitag, AnimatedUnitag] = createIcon({
   name: 'Unitag',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 24 24" {...props}>
       <Rect
         fill={'currentColor' ?? '#FFEFFF'}
@@ -30,5 +30,5 @@ export const [Unitag, AnimatedUnitag] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#FFEFFF',
+  defaultFill: '#FFEFFF'
 })

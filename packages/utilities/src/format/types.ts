@@ -40,7 +40,7 @@ export enum NumberType {
   // nft collection stats like number of items, holder, and sales
   NFTCollectionStats = 'nft-collection-stats',
 
-  Percentage = 'percentage',
+  Percentage = 'percentage'
 }
 export type FiatNumberType = Extract<
   NumberType,

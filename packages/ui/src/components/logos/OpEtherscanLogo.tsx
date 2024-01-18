@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [OpEtherscanLogo, AnimatedOpEtherscanLogo] = createIcon({
   name: 'OpEtherscanLogo',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg viewBox="0 0 122 122" {...props}>
       <_Circle cx="61" cy="61" fill="#ff0420" id="Ellipse_11" r="61" />
       <Path
@@ -22,5 +22,5 @@ export const [OpEtherscanLogo, AnimatedOpEtherscanLogo] = createIcon({
       />
     </Svg>
   ),
-  defaultFill: '#ff0420',
+  defaultFill: '#ff0420'
 })

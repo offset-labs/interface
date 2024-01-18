@@ -5,7 +5,7 @@ import {
   findNearestThemeColor,
   getColorDiffScore,
   hexToRGB,
-  opacify,
+  opacify
 } from 'wallet/src/utils/colors'
 
 it('returns an hex color with opacity', () => {

@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [SlashCircle, AnimatedSlashCircle] = createIcon({
   name: 'SlashCircle',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 16 16" {...props}>
       <G clipPath="url(#clip0_702_17824)">
         <Path
@@ -29,5 +29,5 @@ export const [SlashCircle, AnimatedSlashCircle] = createIcon({
         </ClipPath>
       </Defs>
     </Svg>
-  ),
+  )
 })

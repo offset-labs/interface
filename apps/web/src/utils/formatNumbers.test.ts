@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react'
-import { CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { CurrencyAmount, Percent } from '@offsetcarbon/sdk-core'
 import { USDC_MAINNET } from 'constants/tokens'
 import { useCurrencyConversionFlagEnabled } from 'featureFlags/flags/currencyConversion'
 import { Currency } from 'graphql/data/__generated__/types-and-hooks'

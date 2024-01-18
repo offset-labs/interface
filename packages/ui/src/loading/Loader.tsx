@@ -7,7 +7,7 @@ import { Skeleton } from 'ui/src/loading/Skeleton'
 import { TransactionLoader } from './TransactionLoader'
 
 export const Transaction = memo(function _Transaction({
-  repeat = 1,
+  repeat = 1
 }: {
   repeat?: number
 }): JSX.Element {
@@ -59,5 +59,5 @@ function Image(): JSX.Element {
 export const Loader = {
   NFT,
   Image,
-  Transaction,
+  Transaction
 }

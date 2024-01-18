@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [CopyFilled, AnimatedCopyFilled] = createIcon({
   name: 'CopyFilled',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 29 28" {...props}>
       <Path
         d="M11.8542 8.16667H20.4583V6.5625C20.4583 4.52083 19.4375 3.5 17.3958 3.5H7.1875C5.14583 3.5 4.125 4.52083 4.125 6.5625V16.7708C4.125 18.8125 5.14583 19.8333 7.1875 19.8333H8.79167V11.2292C8.79167 9.1875 9.8125 8.16667 11.8542 8.16667Z"
@@ -17,5 +17,5 @@ export const [CopyFilled, AnimatedCopyFilled] = createIcon({
         opacity="0.4"
       />
     </Svg>
-  ),
+  )
 })

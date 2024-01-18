@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, NativeCurrency as NativeCurrencyClass } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, NativeCurrency as NativeCurrencyClass } from '@offsetcarbon/sdk-core'
 import { useMemo } from 'react'
 import ERC20_ABI from 'wallet/src/abis/erc20.json'
 import { ChainId } from 'wallet/src/constants/chains'

@@ -5,7 +5,7 @@ import { createIcon } from '../factories/createIcon'
 
 export const [Map, AnimatedMap] = createIcon({
   name: 'Map',
-  getIcon: (props) => (
+  getIcon: props => (
     <Svg fill="none" viewBox="0 0 20 20" {...props}>
       <G clipPath="url(#clip0_8270_157937)">
         <Path
@@ -55,5 +55,5 @@ export const [Map, AnimatedMap] = createIcon({
         />
       </G>
     </Svg>
-  ),
+  )
 })
