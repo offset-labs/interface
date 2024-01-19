@@ -477,7 +477,7 @@ exports[`SeedPhraseInputScreen seed phrase initial screen rendering 1`] = `
                     maxFontSizeMultiplier={1.4}
                     style={
                       {
-                        "color": "#FC72FF",
+                        "color": "#6FBFBF",
                         "fontFamily": "Basel-Book",
                         "fontSize": 17,
                         "lineHeight": 24,
@@ -495,7 +495,7 @@ exports[`SeedPhraseInputScreen seed phrase initial screen rendering 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#FC72FF",
+                  "backgroundColor": "#6FBFBF",
                   "borderBottomColor": "transparent",
                   "borderBottomLeftRadius": 16,
                   "borderBottomRightRadius": 16,

@@ -165,7 +165,7 @@ exports[`renders collection preview card 1`] = `
             </Text>
           </View>
           <svg
-            color="#FC72FF"
+            color="#6FBFBF"
             data-file-name="SvgVerified"
             height={16}
             width={16}

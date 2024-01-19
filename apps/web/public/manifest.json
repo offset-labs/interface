@@ -26,7 +26,7 @@
   "iconPath": "./images/256x256_App_Icon_Pink.svg",
   "short_name": "Offset",
   "start_url": ".",
-  "theme_color": "#FC72FF",
+  "theme_color": "#6FBFBF",
   "content_security_policy": {
     "extension_pages": "script-src 'wasm-unsafe-eval'; script-src 'self' 'wasm-unsafe-eval'; script-src 'self' 'unsafe-eval'; default-src 'self' style-src 'self' 'unsafe-inline'; default-src 'self';"
   }

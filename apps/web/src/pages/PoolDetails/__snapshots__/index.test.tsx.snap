@@ -151,8 +151,8 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
   cursor: pointer;
   -webkit-transition-duration: 125ms;
   transition-duration: 125ms;
-  color: #FC72FF;
-  stroke: #FC72FF;
+  color: #6FBFBF;
+  stroke: #6FBFBF;
   font-weight: 500;
 }
 
@@ -517,7 +517,7 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
 .c48 {
   height: 8px;
   width: 40.698463777008904%;
-  background: #FC72FF;
+  background: #6FBFBF;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-right: 1px solid #F9F9F9;
@@ -567,10 +567,10 @@ exports[`PoolDetailsPage pool header is displayed when data is received from the
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #FFEFFF;
+  background-color: #EFFFFF;
   border-radius: 16px;
   border: 0;
-  color: #FC72FF;
+  color: #6FBFBF;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;

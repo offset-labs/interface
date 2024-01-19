@@ -35,7 +35,7 @@ const SwapWrapperOuter = styled.main<{ isDark?: boolean }>`
     inset: 0;
     transform: scale(1.1);
     filter: blur(50px);
-    background-color: rgba(252, 114, 255, 0.075);
+    background-color: rgba(111, 191, 191, 0.2);
     z-index: -2;
   }
 

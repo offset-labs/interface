@@ -40,13 +40,13 @@ exports[`renders wallet preview card 1`] = `
   style={
     {
       "backgroundColor": "#F9F9F9",
-      "borderBottomColor": "#FC72FF",
+      "borderBottomColor": "#6FBFBF",
       "borderBottomLeftRadius": 20,
       "borderBottomRightRadius": 20,
-      "borderLeftColor": "#FC72FF",
-      "borderRightColor": "#FC72FF",
+      "borderLeftColor": "#6FBFBF",
+      "borderRightColor": "#6FBFBF",
       "borderStyle": "solid",
-      "borderTopColor": "#FC72FF",
+      "borderTopColor": "#6FBFBF",
       "borderTopLeftRadius": 20,
       "borderTopRightRadius": 20,
       "borderWidth": 1,
@@ -255,16 +255,16 @@ exports[`renders wallet preview card 1`] = `
       style={
         {
           "alignItems": "center",
-          "borderBottomColor": "#FC72FF",
+          "borderBottomColor": "#6FBFBF",
           "borderBottomLeftRadius": 999999,
           "borderBottomRightRadius": 999999,
           "borderBottomWidth": 1,
-          "borderLeftColor": "#FC72FF",
+          "borderLeftColor": "#6FBFBF",
           "borderLeftWidth": 1,
-          "borderRightColor": "#FC72FF",
+          "borderRightColor": "#6FBFBF",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "borderTopColor": "#FC72FF",
+          "borderTopColor": "#6FBFBF",
           "borderTopLeftRadius": 999999,
           "borderTopRightRadius": 999999,
           "borderTopWidth": 1,
@@ -279,7 +279,7 @@ exports[`renders wallet preview card 1`] = `
         style={
           {
             "alignItems": "stretch",
-            "backgroundColor": "#FC72FF",
+            "backgroundColor": "#6FBFBF",
             "borderBottomLeftRadius": 999999,
             "borderBottomRightRadius": 999999,
             "borderTopLeftRadius": 999999,
